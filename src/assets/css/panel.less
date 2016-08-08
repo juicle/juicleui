@@ -1,0 +1,82 @@
+@panel-radius:6px;
+
+@panel-margin-bottom:16px;
+
+@panel-border-size:1px;
+
+@panel-title-padding:18px 12px;
+
+@panel-body-padding:18px 12px;
+
+@panel-shadwo:0 2px 5px rgba(0, 0, 0, 0.15);
+
+.panel {
+	margin-bottom: @panel-margin-bottom;
+	border: @panel-border-size solid transparent;
+	background-color: #fff;
+	.border_radius(@panel-radius);
+	.box_shadow(@panel-shadwo);
+	.hook-panel();
+}
+
+.panel-title {
+	padding: @panel-title-padding;
+	border-top-right-radius: @panel-radius;
+	border-top-left-radius: @panel-radius;
+	border-bottom: @panel-border-size solid transparent;
+	
+}
+
+.panel-body {
+	padding: @panel-body-padding;
+	border-bottom-right-radius: @panel-radius;
+	border-bottom-left-radius: @panel-radius;
+}
+
+.panel-theme(@color){
+	border-color: @color;
+	.panel-title {
+	  background-color: lighten(@color,36%);
+	  color: @color;
+	  border-bottom-color: @color;
+    }
+}
+
+.panel-default {
+	.panel-theme(@color-default)
+}
+
+.panel-success {
+	.panel-theme(@color-success)
+}
+
+.panel-info {
+	.panel-theme(@color-info)
+}
+
+.panel-warning {
+	.panel-theme(@color-warning)
+}
+
+
+.panel-danger {
+	 .panel-theme(@color-danger);
+}
+
+.panel-primary {
+	.panel-theme(@color-primary);
+}
+
+.hook-panel(){
+	.btn,a {
+	  margin-top: 8px;
+	  margin-bottom: 0;
+    }
+    p{
+      margin: 16px 0 0 0;
+    }
+    h1,h2,h3,h4,h5,h6{
+	  margin-top: 0;
+	  margin-bottom: 6px;
+    }
+}

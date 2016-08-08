@@ -1,0 +1,696 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>表单</h4>
+				<p>
+					内容输入表单 (
+					<code>input</code>
+					,
+					<code>textarea</code>
+					,
+					<code>select</code>
+					, 等) 需要
+					<code>.form-element</code>
+					类。
+		             	这个类给这些元素他们的样式。
+				</p>
+				<div class="alert a-is-danger">
+					<p>
+						禁用元素使用类
+						<code>is-disabled</code> <i class="fa fa-warning"></i>
+					</p>
+				</div>
+				<hr />
+
+				<div class="row-fluid">
+					<h4>基本的表单栗子</h4>
+					<p>输入元素需要你设置宽度。</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<form>
+					<div class="form-group">
+						<label for="emailID">邮箱地址</label>
+						<input type="email" class="form-element" id="emailID" placeholder="你的邮箱地址"></div>
+					<div class="form-group">
+						<label for="passwordID">密码</label>
+						<input type="password" class="form-element" id="passwordID" placeholder="你的密码"></div>
+					<div class="form-group">
+						<label for="someFile">文件上传</label>
+						<input type="file" id="someFile">
+						<p>文件上传格式大小说明</p>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="checkbox">选项表单</label>
+					</div>
+					<button type="submit" class="btn btn-primary">提交</button>
+				</form>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">form</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="attribute">"emailID"</span>&gt;</span>邮箱地址<span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"email"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span> <span class="attribute">id</span>=<span class="attribute">"emailID"</span> <span class="attribute">placeholder</span>=<span class="attribute">"你的邮箱地址"</span>&gt;</span></span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="attribute">"passwordID"</span>&gt;</span>密码<span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"email"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span> <span class="attribute">id</span>=<span class="attribute">"passwordID"</span> <span class="attribute">placeholder</span>=<span class="attribute">"你的密码"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="attribute">"someFile"</span>&gt;</span>文件上传<span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"email"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span> <span class="attribute">id</span>=<span class="attribute">"someFile"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">p</span><span>&gt;</span>文件上传格式大小说明</span><span class="tag">&lt;<span class="title">/p</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span><span>&gt;</span> 选项表单
+  <span class="tag">&lt;<span class="title">/label</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="attribute">"submit"</span> <span class="attribute">class</span>=<span class="attribute">"btn btn-primary"</span>&gt;</span>提交<span>&lt;/button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/form</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>基本的表单元素</h4>
+					<p>
+						这是一个基本的输入表单。确保在
+						<code>input</code>
+						标签上加上
+						<code>form-element</code>
+						类。
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<input type="text" class="form-element" placeholder="input example" />
+				</div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element"</span>&gt;</span></code></pre>
+
+				<div class="row-fluid">
+					<h4>大的表单元素</h4>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<p>
+						在
+						<code>input</code>
+						标签上加上
+						<code>form-element-lg</code>
+						类。
+					</p>
+					<input type="text" class="form-element-lg form-element" placeholder="input example" />
+				</div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element-lg form-element"</span>&gt;</span></code></pre>
+
+				<div class="row-fluid">
+					<h4>小的表单元素</h4>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<p>
+						在
+						<code>input</code>
+						标签上加上
+						<code>form-element-sm</code>
+						类。
+					</p>
+					<input type="text" class="form-element-sm form-element" placeholder="input example" />
+				</div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element-sm form-element"</span>&gt;</span></code></pre>
+
+				<div class="row-fluid">
+					<h4>无法输入的表单元素</h4>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<p>
+						在任何表单元素标签上加上
+						<code>is-disabled</code>
+						类使表单无法输入。
+					</p>
+					<input type="text" class="form-element-sm form-element is-disabled" placeholder="input example" />
+				</div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"text"</span> <span class="attribute">class</span>=<span class="attribute">"form-element-sm form-element is-disabled"</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>验证状态</h4>
+					<p>CCUI为你的UI了提供验证的样式</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<p>
+						把你的
+						<code>label</code>
+						标签 和
+						<code>form-element</code>
+						类放在同一个div层里然后根据你想要的状态分配不同的类。
+						<code>has-success</code>
+						，
+						<code>has-danger</code>
+						，
+						<code>has-info</code>
+						，
+						<code>has-warning</code>
+						，
+						<code>has-primary</code>
+						。
+						<p>
+							也包含了这些input (form-element) 标签元素上的类。
+							<code>f-is-primary</code>
+							，
+							<code>f-is-success</code>
+							，
+							<code>f-is-info</code>
+							，
+							<code>f-is-danger</code>
+							，
+							<code>f-is-warning</code>
+						</p>
+					</p>
+					<div class="row-fluid">
+						<div>
+							<label>基本的表单元素</label>
+							<input class="form-element"></div>
+					</div>
+					<br />
+					<div class="row-fluid">
+						<div class="has-primary">
+							<label>表单元素基本的样式</label>
+							<input class="form-element f-is-primary"></div>
+					</div>
+					<br />
+					<div class="row-fluid">
+						<div class="has-success">
+							<label>表单元素成功的样式</label>
+							<input class="form-element f-is-success"></div>
+					</div>
+					<br />
+					<div class="row-fluid">
+						<div class="has-danger">
+							<label>表单元素危险的样式</label>
+							<input class="form-element f-is-danger"></div>
+					</div>
+					<br />
+					<div class="row-fluid">
+						<div class="has-info">
+							<label>表单元素信息的样式</label>
+							<input class="form-element f-is-info"></div>
+					</div>
+					<br />
+					<div class="row-fluid">
+						<div class="has-warning">
+							<label>表单元素警告的样式</label>
+							<input class="form-element f-is-warning"></div>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"has-warning"</span>&gt;</span>
+ <span class="tag">&lt;label</span>&gt;</span><span>表单元素警告的样式</span><span class="tag">&lt;/label</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="attribute">"form-element f-is-warning"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>表单鼠标经过状态</h4>
+					<p>
+						举个
+						<code>form-element:focus</code>
+						的栗子的样式
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<input type="text" class="input-focus form-element" placeholder="input example" />
+				</div>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>文本区域</h4>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<textarea class="form-element" rows="4"></textarea>
+				</div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">textarea</span> <span class="attribute">class</span>=<span class="attribute">"form-element" <span class="attribute">rows</span>=<span class="attribute">"4"</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>单选和多选表单</h4>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+					<div class="form-group">
+						<label>
+							<input type="checkbox">Check this box</label>
+						<label>
+							<input type="checkbox">Check this box</label>
+						<label>
+							<input type="checkbox">Check this box</label>
+					</div>
+					<br>
+					<div class="radio-btn">
+						<label>
+							<input type="radio" name="radioOption" id="radioOption1" value="radioOption1" checked>This is the default selected answer</label>
+					</div>
+					<div class="radio-btn">
+						<label>
+							<input type="radio" name="radioOption" id="radioOption2" value="radioOption2">
+							Option two is totally awesome and wants to be selected as well
+						</label>
+					</div>
+					<div class="radio-btn is-disabled">
+						<label>
+							<input type="radio" name="radioOption" id="radioOption3" value="radioOption3">Option three is sad he has become disabled</label>
+					</div>
+					<br></div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"form-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span>&gt;</span> Check this box</span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span>&gt;</span> Check this box</span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"checkbox"</span>&gt;</span> Check this box</span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"radio-btn"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"radio"</span> </span><span class="attribute">name</span>=<span class="attribute">"radioOption" <span class="attribute">id</span>=<span class="attribute">"radioOption1"</span> <span class="attribute">value</span>=<span class="attribute">"radioOption1" checked&gt;</span>
+    This is the default selected answer </span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"radio-btn"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"radio"</span> </span><span class="attribute">name</span>=<span class="attribute">"radioOption" <span class="attribute">id</span>=<span class="attribute">"radioOption2"</span> <span class="attribute">value</span>=<span class="attribute">"radioOption2"&gt;</span>
+    Option two is totally awesome and wants to be selected as well </span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"radio-btn"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">label&gt;
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="attribute">"radio"</span> </span><span class="attribute">name</span>=<span class="attribute">"radioOption" <span class="attribute">id</span>=<span class="attribute">"radioOption3"</span> <span class="attribute">value</span>=<span class="attribute">"radioOption3" disabled&gt;</span>
+    Option three is sad he has become disabled </span>
+  </span>&lt;<span class="title">/label</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+
+        <hr>
+
+        <div class="row-fluid">
+			<h4>表单集合</h4>
+			<p>
+			    <span class="btn-label danger">栗子</span>
+			</p>
+
+			<div class="form-element-group" style="width:200px">
+				<input type="text" class="form-element" placeholder="占位符">			
+				<span class="form-element-extra form-border-right">%</span>
+			</div>
+            <pre><code class="xml">&lt;div class=&quot;form-element-group&quot; style=&quot;width:200px&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-element&quot; placeholder=&quot;占位符&quot;&gt;			
+	&lt;span class=&quot;form-element-extra form-border-right&quot;&gt;%&lt;/span&gt;
+&lt;/div&gt;
+			</code></pre>
+
+        </div>
+
+        <hr>
+        <div class="row-fluid">
+        	<h4>表单实例</h4>
+        	<p>
+        		<span class="btn-label danger">栗子</span>
+        	</p>
+        	<form>
+        		<div class="form-group">
+        			<div class="form-left">邮箱地址</div>
+        			<div class="form-middle">
+        				<input type="text" class="form-element danger" id="emailID" placeholder="你的邮箱地址"></div>
+        			<div class="form-right">
+        				<span class="alert a-is-danger">错误提示</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">密码</div>
+        			<div class="form-middle">
+        				<input type="password" class="form-element" id="passwordID" placeholder="你的密码"></div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">不可输入</div>
+        			<div class="form-middle">
+        				<input type="text" class="form-element is-disabled" id="text" disabled></div>
+        			<div class="form-right">
+        				<span class="alert a-is-info">此处是提示</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">省份</div>
+        			<div class="form-middle1">
+        				<select name="province" class="form-element" id="province">
+        					<option value="0">请选择</option>
+        					<option value="1">浙江</option>
+        					<option value="2">江苏</option>
+        				</select>
+        			</div>
+        			<div class="form-middle2">
+        				<select name="city" class="form-element" id="city">
+        					<option value="0">请选择</option>
+        					<option value="1">杭州</option>
+        					<option value="2">南京</option>
+        				</select>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">金额</div>
+        			<div class="form-middle">
+        				<div class="form-element-group">
+        					<span class="form-element-extra form-border-left">￥</span>
+        					<input type="text" class="form-element extra-m">        
+        					<span class="form-element-extra form-border-right">元</span>
+        				</div>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">参数</div>
+        			<div class="form-middle">
+        				<div class="form-element-group">
+        					<span class="form-element-extra form-border-left">ID</span>
+        					<input type="text" class="form-element"></div>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">参数</div>
+        			<div class="form-middle">
+        				<div class="form-element-group">
+        					<input type="text" class="form-element">        
+        					<span class="form-element-extra form-border-right">%</span>
+        				</div>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">参数</div>
+        			<div class="form-middle">
+        				<div class="form-element-group">
+        					<input type="text" class="form-element form-border-left">        
+        					<span class="form-group-btn">
+        						<button class="btn btn-default form-border-right">检测</button>
+        					</span>
+        				</div>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">复选框</div>
+        			<div class="form-middle">
+        				<div class="checkbox">
+        					<label>
+        						<input type="checkbox">选项一</label>
+        					<label class="label-spacing">
+        						<input type="checkbox">选项二</label>
+        				</div>
+        				<div class="checkbox">
+        					<label>
+        						<input type="checkbox">选项一</label>
+        					<label class="label-spacing">
+        						<input type="checkbox">选项二</label>
+        				</div>
+
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-info">此处是提示</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">单选框</div>
+        			<div class="form-middle">
+        				<div class="checkbox">
+        					<label>
+        						<input type="radio">选项一</label>
+        					<label class="label-spacing">
+        						<input type="radio">选项二</label>
+        				</div>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-info">此处是提示</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">文本域</div>
+        			<div class="form-mright">
+        				<textarea class="form-textarea" style="height:130px"></textarea>
+        				<span class="alert a-is-info">這裡是提示</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">上传头像</div>
+        			<div class="form-middle">
+        				<button class="btn btn-primary form-element">上传</button>
+        				<div class="upload-img">
+        					<img src="../assets/images/thumbnail.png" alt="">        
+        					<a href="javascript:void(0);" class="fa fa-close click uploaded-remove"></a>
+        				</div>
+        			</div>
+        			<div class="form-right">
+        				<span class="alert a-is-success">成功</span>
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="form-left">&nbsp;</div>
+        			<div class="form-middle">
+        				<button class="btn btn-warning form-element">提交</button>
+        			</div>
+        			<div class="form-right">&nbsp;</div>
+        		</div>
+
+        	</form>
+
+        	<pre><code class="xml">
+        		&lt;form&gt;
+        		&lt;div class=&quot;form-group&quot;&gt;
+        			&lt;div class=&quot;form-left&quot;&gt;邮箱地址&lt;/div&gt;
+        			&lt;div class=&quot;form-middle&quot;&gt;
+        				&lt;input type=&quot;text&quot; class=&quot;form-element danger&quot; id=&quot;emailID&quot; placeholder=&quot;你的邮箱地址&quot;&gt;&lt;/div&gt;
+        			&lt;div class=&quot;form-right&quot;&gt;
+        				&lt;span class=&quot;alert a-is-danger&quot;&gt;错误提示&lt;/span&gt;
+        			&lt;/div&gt;
+        		&lt;/div&gt;
+
+  		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;密码&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;input type=&quot;password&quot; class=&quot;form-element&quot; id=&quot;passwordID&quot; placeholder=&quot;你的密码&quot;&gt;&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;不可输入&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;input type=&quot;text&quot; class=&quot;form-element is-disabled&quot; id=&quot;text&quot; disabled&gt;&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-info&quot;&gt;此处是提示&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;省份&lt;/div&gt;
+    			&lt;div class=&quot;form-middle1&quot;&gt;
+    				&lt;select name=&quot;province&quot; class=&quot;form-element&quot; id=&quot;province&quot;&gt;
+    					&lt;option value=&quot;0&quot;&gt;请选择&lt;/option&gt;
+    					&lt;option value=&quot;1&quot;&gt;浙江&lt;/option&gt;
+    					&lt;option value=&quot;2&quot;&gt;江苏&lt;/option&gt;
+    				&lt;/select&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-middle2&quot;&gt;
+    				&lt;select name=&quot;city&quot; class=&quot;form-element&quot; id=&quot;city&quot;&gt;
+    					&lt;option value=&quot;0&quot;&gt;请选择&lt;/option&gt;
+    					&lt;option value=&quot;1&quot;&gt;杭州&lt;/option&gt;
+    					&lt;option value=&quot;2&quot;&gt;南京&lt;/option&gt;
+    				&lt;/select&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;金额&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;div class=&quot;form-element-group&quot;&gt;
+    					&lt;span class=&quot;form-element-extra form-border-left&quot;&gt;￥&lt;/span&gt;
+    					&lt;input type=&quot;text&quot; class=&quot;form-element&quot;&gt;        
+    					&lt;span class=&quot;form-element-extra form-border-right&quot;&gt;元&lt;/span&gt;
+    				&lt;/div&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;参数&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;div class=&quot;form-element-group&quot;&gt;
+    					&lt;span class=&quot;form-element-extra form-border-left&quot;&gt;ID&lt;/span&gt;
+    					&lt;input type=&quot;text&quot; class=&quot;form-element&quot;&gt;&lt;/div&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;参数&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;div class=&quot;form-element-group&quot;&gt;
+    					&lt;input type=&quot;text&quot; class=&quot;form-element&quot;&gt;        
+    					&lt;span class=&quot;form-element-extra form-border-right&quot;&gt;%&lt;/span&gt;
+    				&lt;/div&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;参数&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;div class=&quot;form-element-group&quot;&gt;
+    					&lt;input type=&quot;text&quot; class=&quot;form-element form-border-left&quot;&gt;        
+    					&lt;span class=&quot;form-group-btn&quot;&gt;
+    						&lt;button class=&quot;btn btn-default form-border-right&quot;&gt;检测&lt;/button&gt;
+    					&lt;/span&gt;
+    				&lt;/div&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;复选框&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;div class=&quot;checkbox&quot;&gt;
+    					&lt;label&gt;
+    						&lt;input type=&quot;checkbox&quot;&gt;选项一&lt;/label&gt;
+    					&lt;label class=&quot;label-spacing&quot;&gt;
+    						&lt;input type=&quot;checkbox&quot;&gt;选项二&lt;/label&gt;
+    				&lt;/div&gt;
+    				&lt;div class=&quot;checkbox&quot;&gt;
+    					&lt;label&gt;
+    						&lt;input type=&quot;checkbox&quot;&gt;选项一&lt;/label&gt;
+    					&lt;label class=&quot;label-spacing&quot;&gt;
+    						&lt;input type=&quot;checkbox&quot;&gt;选项二&lt;/label&gt;
+    				&lt;/div&gt;
+
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-info&quot;&gt;此处是提示&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;单选框&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;div class=&quot;checkbox&quot;&gt;
+    					&lt;label&gt;
+    						&lt;input type=&quot;radio&quot;&gt;选项一&lt;/label&gt;
+    					&lt;label class=&quot;label-spacing&quot;&gt;
+    						&lt;input type=&quot;radio&quot;&gt;选项二&lt;/label&gt;
+    				&lt;/div&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-info&quot;&gt;此处是提示&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;文本域&lt;/div&gt;
+    			&lt;div class=&quot;form-mright&quot;&gt;
+    				&lt;textarea class=&quot;form-textarea&quot; style=&quot;height:130px&quot;&gt;&lt;/textarea&gt;
+    				&lt;span class=&quot;alert a-is-info&quot;&gt;這裡是提示&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;上传头像&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;button class=&quot;btn btn-primary form-element&quot;&gt;上传&lt;/button&gt;
+    				&lt;div class=&quot;upload-img&quot;&gt;
+    					&lt;img src=&quot;../assets/images/thumbnail.png&quot; alt=&quot;&quot;&gt;        
+    					&lt;a href=&quot;javascript:void(0);&quot; class=&quot;fa fa-close click uploaded-remove&quot;&gt;&lt;/a&gt;
+    				&lt;/div&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;
+    				&lt;span class=&quot;alert a-is-success&quot;&gt;成功&lt;/span&gt;
+    			&lt;/div&gt;
+    		&lt;/div&gt;
+
+    		&lt;div class=&quot;form-group&quot;&gt;
+    			&lt;div class=&quot;form-left&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    			&lt;div class=&quot;form-middle&quot;&gt;
+    				&lt;button class=&quot;btn btn-warning form-element&quot;&gt;提交&lt;/button&gt;
+    			&lt;/div&gt;
+    			&lt;div class=&quot;form-right&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    		&lt;/div&gt;
+
+    	&lt;/form&gt;
+        	</code></pre>
+        </div>
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>hljs.initHighlightingOnLoad();</script>

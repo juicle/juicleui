@@ -1,0 +1,147 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>面板</h4>
+				<p>
+					有时候需要一个可以放内容的有边框和边距的窗口，我们使用
+					<code>panel</code>
+					类来实现它。
+				</p>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>基本的面板</h4>
+				</div>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<div class="panel panel-default">
+						<div class="panel-body">
+							基本的面板组件使用
+							<code>panel-default</code>
+							修饰类而且没有面板的头部。
+						</div>
+					</div>
+
+					<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-default"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-body"</span>&gt;</span>
+  …
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+				</div>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>带头部的面板</h4>
+				</div>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<div class="panel panel-default">
+						<div class="panel-title">基本的面板头部</div>
+						<div class="panel-body">
+							基本的面板组件使用
+							<code>panel-default</code>
+							修饰类而且带有面板的头部。
+						</div>
+					</div>
+
+					<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-default"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-title"</span>&gt;</span>
+   …
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-body"</span>&gt;</span>
+  …
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+				</div>
+
+				<div class="row-fluid">
+					<h4>面板修饰类</h4>
+					<p>面板修饰类的一些样式。</p>
+					<span class="btn-label danger">栗子</span>
+				</div>
+
+				<div class="row-fluid">
+					<div class="panel panel-primary">
+						<div class="panel-title">主要的头部</div>
+						<div class="panel-body">主要的内容。</div>
+					</div>
+
+					<div class="panel panel-success">
+						<div class="panel-title">成功的头部</div>
+						<div class="panel-body">成功的内容。</div>
+					</div>
+
+					<div class="panel panel-info">
+						<div class="panel-title">信息的头部</div>
+						<div class="panel-body">信息的内容。</div>
+					</div>
+
+					<div class="panel panel-warning">
+						<div class="panel-title">警告的头部</div>
+						<div class="panel-body">警告的内容。</div>
+					</div>
+
+					<div class="panel panel-danger">
+						<div class="panel-title">危险的头部</div>
+						<div class="panel-body">
+							危险的内容。
+							<p>
+								<a href="#" class="btn btn-sm btn-danger">危险的按钮</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row-fluid">
+					<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-primary"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-title"</span>&gt;</span>
+   主要的头部
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-body"</span>&gt;</span>
+  主要的内容。
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-success"</span>&gt;</span> … <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-info"</span>&gt;</span> … <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-warning"</span>&gt;</span> … <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel panel-danger"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-title"</span>&gt;</span>
+   危险的头部
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"panel-body"</span>&gt;</span>
+  危险的内容。
+  <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="attribute">"#"</span> <span class="attribute">class</span>=<span class="attribute">"btn btn-sm btn-danger"</span>&gt;</span><span class="tag">&lt;<span class="title">/p</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>hljs.initHighlightingOnLoad();</script>

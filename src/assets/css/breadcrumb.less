@@ -1,0 +1,37 @@
+
+@breadcrumb-font-size:                          1rem;
+
+@breadcrumb-divider:                            "/";
+@breadcrumb-divider-margin:                     8px;
+@breadcrumb-disabled-color:                     #999;
+
+
+
+.breadcrumb {
+    padding: 0;
+    list-style: none;
+    font-size: 0.001px;
+}
+
+
+
+.breadcrumb > li {
+    font-size: @breadcrumb-font-size;
+    vertical-align: top;
+}
+
+.breadcrumb > li,
+.breadcrumb > li > a,
+.breadcrumb > li > span { display: inline-block; }
+
+.breadcrumb > li:nth-child(n+2):before {
+    content: @breadcrumb-divider;
+    display: inline-block;
+    margin: 0 @breadcrumb-divider-margin;
+}
+
+
+.breadcrumb > li:not(.active) > span { color: @breadcrumb-disabled-color; }
+
+
+

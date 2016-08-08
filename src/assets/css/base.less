@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  font-size: @font-size-base + 2 ;
+  background-color:@color-body-bg;
+  color: @color-body;
+  .font-family-base
+}
+
+.font-family-base{
+  font-family: @font-family-default;
+  *font-family: @font-family-default-hack
+}
+pre{.font-family-base}
+
+input,textarea{
+  box-sizing: border-box;
+}
+
+input,
+textarea {.font-family-base}
+
+button{.font-family-base}
+
+
+blockquote,
+.blockquote {
+  font-family: @font-family-default;
+  font-size: @font-size-base + 4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 16px;
+  border-left: 5px solid #000;
+  font-style: italic;
+  width: 600px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: auto;
+  resize: none;
+}
+
+hr {
+  border-top: 1px solid #dfdfdf;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 1px;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;  
+  outline: none; 
+  color: @color-link;
+}
+
+a:hover {
+  text-decoration: none;
+  color: @color-link-hover;
+}
+
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 0px;
+}
+
+p,
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 10px;
+}
+
+p{
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 3px 0 7px 0; 
+  font-weight: normal; 
+}
+
+/* Other style */
+
+.xml {
+  font-size: @font-size-base;
+}
+
+/* Fluid position style CSS */
+
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
+}
+
+.-(@i: 1) when (@i <= 6) {
+  .f@{i}{font-size:@font-size-base + (@i - 1)*2 }
+.-((@i + 1));
+}.-;
+
+/* -webkit- */
+::selection {
+  background-color: @color-main;
+  color: @color-selection;
+}
+/* fireforx */
+::-moz-selection {
+  background-color: @color-main;
+  color: @color-selection;
+}
+
+/* base background color */
+
+
+.bc000 {
+  background-color: #000;
+  color: @color-white;
+}
+.bc222 {
+  background-color: #222;
+  color: @color-white;
+}
+.bc333 {
+  background-color: #333;
+  color: @color-white;
+}
+
+.bc555 {
+  background-color: #555;
+  color: @color-white;
+}
+
+.bc777 {
+  background-color: #777;
+  color: @color-white;
+}
+
+.bc999 {
+  background-color: #999;
+  color: @color-white;
+}
+
+.bcaaa {
+  background-color: #aaa;
+  color: @color-white;
+}
+
+.bcccc {
+  background-color: #ccc;
+  color: @color-white;
+}
+
+.bcddd {
+  background-color: #ddd;
+  color: @color-white;
+}
+
+.bceee {
+  background-color: #eee;
+  color: #ffffff;
+}
+
+.bcfff {
+  background-color: #fff;
+  color: @color-white;
+}
+
+.bc-primary {
+  background-color: @color-primary;
+  color: @color-white;
+}
+
+.bc-success {
+  background-color: @color-success;
+  color: @color-white;
+}
+
+.bc-info {
+  background-color: @color-info;
+  color: @color-white;
+}
+
+.bc-warning {
+  background-color: @color-warning;
+  color: @color-white;
+}
+
+.bc-danger {
+  background-color: @color-danger;
+  color: @color-white;
+}
+
+/* base color */
+.color-white{
+  color: @color-white;
+}
+
+.color-red{
+  color: @color-red;
+}
+
+.color-warter-blue{
+  color: @color-warter-blue;
+}
+
+.color-yellow{
+  color: @color-yellow;
+}
+
+.color-green{
+  color: @color-green;
+}
+
+.color-ice-blue{
+  color: @color-ice-blue;
+}
+
+.color-blue{
+  color: @color-blue;
+}
+
+.color-gray{
+  color: @color-gray;
+}
+
+.pad-horizontal-large{
+  .padding(horizontal,40px);
+}
+
+.pad-horizontal-middle{
+  .padding(horizontal,20px);
+}
+
+.pad-horizontal-small{
+  .padding(horizontal,10px);
+}
+
+
+

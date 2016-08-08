@@ -1,0 +1,75 @@
+
+@comment-header-margin-bottom:                  15px;
+
+@comment-avatar-margin-right:                   15px;
+
+@comment-title-margin-top:                      5px;
+@comment-title-font-size:                       16px;
+@comment-title-line-height:                     22px;
+
+@comment-meta-margin-top:                       2px;
+@comment-meta-color:                            #999;
+@comment-meta-font-size:                        11px;
+@comment-meta-line-height:                      16px;
+
+@comment-list-margin-top:                       15px;
+@comment-list-padding-left:                     100px;
+
+
+
+
+
+.comment-header {
+    margin-bottom: @comment-header-margin-bottom;
+}
+
+.comment-header:before,
+.comment-header:after {
+    content: "";
+    display: table;
+}
+
+.comment-header:after { clear: both; }
+
+.comment-avatar {
+    margin-right: @comment-avatar-margin-right;
+    float: left;
+
+}
+
+.comment-title {
+    margin: @comment-title-margin-top 0 0 0;
+    font-size: @comment-title-font-size;
+    line-height: @comment-title-line-height;
+
+}
+
+
+.comment-meta {
+    margin: @comment-meta-margin-top 0 0 0;
+    font-size: @comment-meta-font-size;
+    line-height: @comment-meta-line-height;
+    color: @comment-meta-color;
+}
+
+
+.comment-body > :last-child { margin-bottom: 0; }
+
+.comment-list {
+    padding: 0;
+    list-style: none;
+}
+
+.comment-list .comment + ul {
+    margin: @comment-list-margin-top 0 0 0;
+    list-style: none;
+}
+
+.comment-list > li:nth-child(n+2),
+.comment-list .comment + ul > li:nth-child(n+2) { margin-top: @comment-list-margin-top; }
+
+@media (min-width: @breakpoint-medium) {
+
+    .comment-list .comment + ul { padding-left: @comment-list-padding-left; }
+
+}

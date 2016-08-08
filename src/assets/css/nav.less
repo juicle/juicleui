@@ -1,0 +1,247 @@
+@nav-menu-background:#fff;
+
+@item-link-on:#fff;
+
+@menu-item-on-background:@color-main;
+
+@border-radius:6px;
+@menu-item-radius:@border-radius @border-radius 0 0;
+@sub-menu-radius:0 @border-radius @border-radius @border-radius;
+
+@item-link-lineheight:30px;
+@item-link-size:16px;
+@item-line-color:@color-main;
+@item-line-pad:5px 30px;
+
+@sub-menu-width:160px;
+@sub-menu-border:1px solid @color-main;
+@sub-menu-pad:3px 0px;
+@sub-menu-top:30px;
+
+@sub-item-color:@color-main;
+@sub-item-height:30px;
+@sub-item-border:1px solid @color-main;
+@sub-item-pad:30px;
+
+@sub-item-hover-color:#fff;
+@sub-item-hover-background:@color-main;
+
+
+
+.nav-menu{
+	float: right;
+	.menu-item{
+	   display: inline-block;
+	   *float: left;
+	   position: relative;
+	   background: @nav-menu-background;
+	   -webkit-border-radius: @menu-item-radius;
+	   -moz-border-radius: @menu-item-radius;
+	   -ms-border-radius: @menu-item-radius;
+	   -o-border-radius: @menu-item-radius;
+	   border-radius: @menu-item-radius;
+    }
+    .menu-item .border-bottom {
+	   -webkit-border-radius: @border-radius;
+	   -moz-border-radius: @border-radius;
+	   -ms-border-radius: @border-radius;
+	   -o-border-radius: @border-radius;
+	   border-radius: @border-radius;
+    }
+    .menu-item .item-link{
+	   line-height: @item-link-lineheight; 
+	   font-size: @item-link-size;
+	   color: @item-line-color;
+	   padding: @item-line-pad
+    }
+    .menu-item-on{
+	   background: @menu-item-on-background;
+    }
+    .menu-item-on .item-link{
+	   color: @item-link-on;
+    }
+    
+}
+
+.dropdown{
+	position:relative;
+	display: inline-block;
+}
+
+.sub-menu{
+	display: none;
+	position: absolute;
+	*left: 0;
+	*top: @sub-menu-top;
+	width: @sub-menu-width;
+	background: @nav-menu-background;
+	z-index: 7777777;
+	border: @sub-menu-border;
+	padding: @sub-menu-pad;
+	&.on{
+		display: block;
+	}
+}
+
+.menu-item-on .sub-menu{
+	display: block;
+}
+
+.sub-menu .sub-item a{
+	line-height: @sub-item-height;
+	_height: @sub-item-height;
+	display: block;
+	color: @sub-item-color;
+	padding:0 @sub-item-pad;
+}
+
+.sub-menu .sub-item a:hover{
+	background: @sub-item-hover-background;
+	color: @sub-item-hover-color;
+}
+
+@media (max-width: @breakpoint-medium) {
+.mobile-nav {
+	display: block;
+	background:none;
+	height:auto;
+	.mobile-nav-bg{
+	   display:inherit;
+	   height:40px;
+	   top:0;
+	   position:fixed;
+	   z-index:999;
+	   width:100%;
+    }
+    .toggle-btn{
+	   display:inline-block; /* Show button */
+	   font-size:15px;
+	   text-decoration:none;
+	   color:#fff;
+	   position:fixed;
+	   z-index:9999;
+	   right:0px;
+	   top:0px;
+    }
+    i{
+	   font-size: 21px;
+	   margin: 9px 12px 0 0;
+	   background: none;
+    }
+}
+
+#mobile-nav-menu{
+	float:none;
+	margin-top:0px;
+	top:0;
+	height:40px;
+	z-index:9999;
+}
+
+#mobile-nav-menu{
+	display:none; /* Hidden the nav at the first */
+}
+
+#mobile-nav-menu li{
+	float:inherit; /* Desktop menu */
+}
+
+#mobile-nav-menu li, #mobile-nav-menu li a{
+	display:inline-block;
+	text-decoration:none;
+	font-size: 13px;
+}
+
+#mobile-nav-menu li a{
+	display:inherit;
+	width:inherit;
+	height:inherit;
+	line-height:inherit;
+}
+
+#mobile-nav-menu .close{
+	display:none; /* Hidden close button */
+}
+
+#mobile-nav-menu:target .close{
+	display:inline-block; /* Show the button is closed when the nav is active */
+}
+
+#mobile-nav-menu:target{
+	display:block; /* The style of the nav when the nav is active */
+	position:absolute;
+	top:40px;
+	padding-top:0;
+	width:100%;
+}
+
+#mobile-nav-menu:target ul{
+	background:#4600b0; /* The ul tag when nav is active */
+}
+
+#mobile-nav-menu:target li{
+	display:block; /* The li and a when the nav is active */
+	text-align:left;
+	margin:0;
+	text-align:center;
+}
+
+#mobile-nav-menu:target li a{
+	display:block; /* The li and a when the nav is active */
+	color:#fff;
+	text-align:left;
+	margin:0;
+	padding:10px 0;
+	text-align:center;
+}
+
+#mobile-nav-menu:target li a:hover{
+	background:#7440c4; /* The style of a when it is hover  */
+}
+
+/* home part */
+
+.home-friend {
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+
+footer{
+	padding-left:20px;
+	padding-right:20px;
+	text-align: center;
+}
+
+footer .foot-nav{
+	text-align: center;
+}
+
+/* page part */
+
+.page-main{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.page-main .content-main{
+	border: none;
+	padding-left: 0;
+}
+
+/* nav part */
+
+.head-nav2 .logo2{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.nav-menu{
+	float: none;
+	text-align: center;
+}
+
+.sub-menu{
+	text-align: left;
+}
+
+}

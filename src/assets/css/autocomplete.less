@@ -1,0 +1,45 @@
+.autocomplete {
+	border: 1px solid #ccc;
+	position: absolute;
+	display: none;
+	overflow: auto;
+	background-color: #ffffff;
+	& > ul{
+		margin-bottom:0px;
+	}
+	& > ul > li {
+		word-break: break-all;
+	}
+	& > ul > li > div {
+		display: table-row;
+		width: 100%;
+	}
+    & > ul > li > div em {
+    	color:#333;
+    	font-style: normal;
+    }
+    & > ul > li.normal {
+    	padding: 2px 0px 2px 5px;
+    	cursor: pointer;
+    }
+    & > ul > li.normal > div > span,& div.ac > ul > li.iconList > div > span{
+    	display: table-cell;
+    	vertical-align: middle;
+    	color:#333;
+    }
+    & > ul > li.iconList {
+    	padding: 0px 0px 0px 2px;
+    }
+    & > ul > li.iconList > div > div {
+    	display: table-cell;
+    	vertical-align: middle;
+    	padding-right: 5px;
+    }
+    & > ul > li.iconList > div > div > img {
+    	display: table;
+    	display: table-cell;
+    }  
+    & > ul > li.selected {
+    	background-color: #eeeeee;
+    } 
+}

@@ -1,0 +1,112 @@
+<header class="head-nav mobile-hidden" id="top"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>平滑滚动</h4>
+				<p>
+					用一个漂亮的缓慢滚动效果来增强网站页面内各部分之间跳转时的效果。
+				</p>
+				<hr />
+                
+                <div class="row-fluid">
+					<h4>用法</h4>
+				</div>
+
+                <div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<div class="row-fluid">
+                		<div class="dropdown">
+                			<a href="#bottom" class="btn btn-default" id="scroll-smooth">去底部</a>
+                		</div>
+                		<div class="dropdown">
+                			<a href="#top" class="btn btn-primary" id="scroll-smooth">去顶部</a>
+                		</div>
+                	</div>
+
+					
+				</div>
+
+				<div class="row-fluid">
+					<h4>参数配置</h4>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>set</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>offset</code></td>
+								<td>滑动到的位置的偏移量</td>
+							</tr>
+							<tr>
+								<td><code>direction</code></td>
+								<td>滑动的方向，可取 'top' 或 'left'</td>
+							</tr>
+							<tr>
+								<td><code>scrollTarget</code></td>
+								<td>只有当你想重写默认行为的时候才会用到</td>
+							</tr>
+							<tr>
+								<td><code>beforeScroll</code></td>
+								<td>滑动开始前的回调函数。</td>
+							</tr>
+							<tr>
+								<td><code>afterScroll</code></td>
+								<td>滑动完成后的回调函数。</td>
+							</tr>
+							<tr>
+								<td><code>easing</code></td>
+								<td>缓动效果</td>
+							</tr>
+							<tr>
+								<td><code>speed</code></td>
+								<td>滑动的速度</td>
+							</tr>
+							<tr>
+								<td><code>autoCoefficent</code></td>
+								<td>"自动" 加速的系数</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				
+
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer id="bottom"></footer>
+<script>
+$(function(){
+  $(".row-fluid").on("click","[id='scroll-smooth']",function(){
+  	   event.preventDefault();
+  	   var link = this;
+       $.smoothScroll({
+          scrollTarget: link.hash,
+          speed:1000
+       });
+   });
+})
+</script>
+<script>hljs.initHighlightingOnLoad();</script>

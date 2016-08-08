@@ -1,0 +1,390 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>动画</h4>
+				<p>收集了一些可以流畅运行在你的页面中的简单动画。</p>
+				<hr />
+
+				<div class="row-fluid">
+					<h4>相关参数的设置</h4>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>class</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code>.animation-fade</code>
+								</td>
+								<td>元素淡入</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-scale-up</code>
+								</td>
+								<td>元素由小变大</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-scale-down</code>
+								</td>
+								<td>元素由大变小</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-slide-top</code>
+								</td>
+								<td>元素从顶部滑入</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-slide-bottom</code>
+								</td>
+								<td>元素从底部滑入</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-slide-left</code>
+								</td>
+								<td>元素从左边滑入</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-slide-right</code>
+								</td>
+								<td>元素从右边滑入</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-shake</code>
+								</td>
+								<td>元素震动</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-scale</code>
+								</td>
+								<td>元素由大变小而不改变透明度</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<div class="row-fluid">
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-fade">Fade</div>
+						</div>
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-scale-up">Scale up</div>
+						</div>
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-scale-down">>Scale down</div>
+						</div>
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-shake">Shake</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-slide-top">Slide top</div>
+						</div>
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-slide-bottom">Slide bottom</div>
+						</div>
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-slide-left">Slide left</div>
+						</div>
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-slide-right">Slide right</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="grid3 animation-hover">
+							<div class="ex-grid animation-scale">Scale</div>
+						</div>
+						<div class="grid9">&nbsp;</div>
+					</div>
+
+					<pre><code class="xml">&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-fade&quot;&gt;Fade&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-scale-up&quot;&gt;Scale up&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-scale-down&quot;&gt;&gt;Scale down&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-shake&quot;&gt;Shake&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-slide-top&quot;&gt;Slide top&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-slide-bottom&quot;&gt;Slide bottom&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-slide-left&quot;&gt;Slide left&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-slide-right&quot;&gt;Slide right&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-scale&quot;&gt;Scale&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid9&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+				<hr>
+				<div class="row-fluid">
+					<h4>反向动画/Reverse modifier</h4>
+				</div>
+
+				<p>
+					默认地，所有动画都是元素出现的效果。要把动画反向，添加
+					<code>.animation-reverse</code>
+					类就行啦。
+				</p>
+
+				<span class="btn-label danger">栗子</span>
+
+				<div class="row-fluid">
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-fade">Fade</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-scale-up">Scale up</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-scale-down">>Scale down</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-shake">Shake</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-slide-top">Slide top</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-slide-bottom">Slide bottom</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-slide-left">Slide left</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-slide-right">Slide right</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-reverse animation-scale">Scale</div>
+					</div>
+					<div class="grid9">&nbsp;</div>
+				</div>
+
+				<pre><code class="xml">&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-fade&quot;&gt;Fade&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-scale-up&quot;&gt;Scale up&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-scale-down&quot;&gt;&gt;Scale down&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-shake&quot;&gt;Shake&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-slide-top&quot;&gt;Slide top&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-slide-bottom&quot;&gt;Slide bottom&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-slide-left&quot;&gt;Slide left&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-slide-right&quot;&gt;Slide right&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;div class=&quot;grid3 animation-hover&quot;&gt;&lt;div class=&quot;ex-grid animation-reverse animation-scale&quot;&gt;Scale&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;grid9&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+				<hr>
+				<div class="row-fluid">
+					<h4>源头修改/Origin modifier</h4>
+				</div>
+
+				<p>默认情况下，缩放动画的源头是中间。修改这个行为，添加以下类中的一个就行。</p>
+
+				<div class="responsive-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>class</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code>.animation-top-left</code>
+								</td>
+								<td>动画从左上角展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-top-center</code>
+								</td>
+								<td>动画从上方中间展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-top-right</code>
+								</td>
+								<td>动画从右上角展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-middle-left</code>
+								</td>
+								<td>动画从左边中间展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-middle-right</code>
+								</td>
+								<td>动画从右边中间展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-bottom-left</code>
+								</td>
+								<td>动画从左下角展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-bottom-center</code>
+								</td>
+								<td>动画从底部中间展开</td>
+							</tr>
+							<tr>
+								<td>
+									<code>.animation-bottom-right</code>
+								</td>
+								<td>动画从右下角展开</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+				<span class="btn-label danger">栗子</span>
+
+				<div class="row-fluid">
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-top-left">Top Left</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-top-center">Top Center</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-top-right">Top Right</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-middle-left">Middle Left</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-middle-right">Middle Right</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-bottom-left">Bottom Left</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-bottom-center">Bottom Center</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-scale animation-bottom-right">Bottom Right</div>
+					</div>
+				</div>
+
+				<pre><code class="xml">
+				&lt;div class=&quot;row-fluid&quot;&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-top-left&quot;&gt;Top Left&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-top-center&quot;&gt;Top Center&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-top-right&quot;&gt;Top Right&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-middle-left&quot;&gt;Middle Left&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;row-fluid&quot;&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-middle-right&quot;&gt;Middle Right&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-bottom-left&quot;&gt;Bottom Left&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-bottom-center&quot;&gt;Bottom Center&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-scale animation-bottom-right&quot;&gt;Bottom Right&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				</code></pre>
+				<hr>
+				<div class="row-fluid">
+					<h4>鼠标悬停与动画</h4>
+				</div>
+
+				<p>
+					通过鼠标悬停触发动画，只需添加
+					<code>.animation-hover</code>
+					类到动画元素本身或者它的容器中。
+				</p>
+
+				<span class="btn-label danger">栗子</span>
+
+				<div class="row-fluid">
+					<div class="grid3">
+						<div class="ex-grid animation-fade animation-hover">Top Left</div>
+					</div>
+					<div class="grid3 animation-hover">
+						<div class="ex-grid animation-slide-right">Top Center</div>
+					</div>
+					<div class="grid3">&nbsp;</div>
+					<div class="grid3">&nbsp;</div>
+				</div>
+
+				<pre><code class="xml">
+				&lt;div class=&quot;row-fluid&quot;&gt;
+					&lt;div class=&quot;grid3&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-fade animation-hover&quot;&gt;Top Left&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3 animation-hover&quot;&gt;
+						&lt;div class=&quot;ex-grid animation-slide-right&quot;&gt;Top Center&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3&quot;&gt;
+						&amp;nbsp;
+					&lt;/div&gt;
+					&lt;div class=&quot;grid3&quot;&gt;
+						&amp;nbsp;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				</code></pre>
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+</div>
+
+<footer></footer>
+<script>hljs.initHighlightingOnLoad();</script>

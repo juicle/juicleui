@@ -1,0 +1,95 @@
+// Variables
+
+
+//Colors
+
+@color-blue:#26c3f5;
+@color-warter-blue:#2ddacc;
+@color-ice-blue:#349bde;
+@color-yellow:#f4a72a;
+@color-red:#e74b3c;
+@color-green:#40d47e;
+@color-white:#fff;
+@color-black:#333;
+@color-gray:#777;
+
+@color-main: @color-blue;
+@color-primary: @color-ice-blue;
+@color-danger: @color-red;
+@color-warning: @color-yellow;
+@color-success: @color-green;
+@color-info:@color-warter-blue;
+@color-default:@color-gray;
+
+@color-primary-background:lighten(@color-primary,40%);
+@color-success-background:lighten(@color-success,40%);
+@color-danger-background:lighten(@color-danger,40%);
+@color-info-background:lighten(@color-info,40%);
+@color-warning-background:lighten(@color-warning,40%);
+
+@color-primary-active: @color-primary-background;
+@color-danger-active: @color-danger-background;
+@color-warning-active: @color-warning-background;
+@color-success-active: @color-success-background;
+@color-info-active: @color-info-background;
+
+@color-split: #e7e7e7;  
+@color-bg: #eee;
+@color-text: #3d4145; 
+@color-text-secondary: #5f646e; 
+@color-text-gray: #999; 
+@color-text-gray-light: #ccc; 
+
+@color-link:@color-black; 
+@color-link-hover: @color-yellow; 
+@color-link-active: @color-primary-active; 
+
+@color-selection: #ffffff;
+@color-selection-bg:#571fd9;
+
+@color-body:#666;
+@color-body-bg:#fff;
+
+
+
+//Typography
+@font-family-default: Arial, Microsoft Yahei, SimSun, 'Helvetica Neue', 'Liberation Sans', FreeSans, sans-serif;
+@font-family-default-hack: "Microsoft YaHei","微软雅黑" !important;
+
+@font-size-base: 12px;
+
+@font-size-h1:floor((@font-size-base * 3)); // ~36px
+
+@font-size-large: ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small: ceil((@font-size-base * 0.85)); // ~12px
+
+
+
+//LineHeight & Weight
+@line-height-base:24px; 
+@line-height-computed:floor((@font-size-base * @line-height-base)); // ~20px
+
+@font-weight: 500;
+@font-weight-light: 400;
+
+// Buttons
+@button-size-small: 12px;
+@button-size-middle: 14px;
+@button-size-large: 20px;
+
+
+// Borders
+ 
+
+
+
+// Breakpoints
+@breakpoint-small:                              480px;
+@breakpoint-medium:                             738px;
+@breakpoint-large:                              980px;
+@breakpoint-xlarge:                             1200px;
+
+@breakpoint-mini-max:                           (@breakpoint-small - 1);
+@breakpoint-small-max:                          (@breakpoint-medium - 1);
+@breakpoint-medium-max:                         (@breakpoint-large - 1);
+@breakpoint-large-max:                          (@breakpoint-xlarge - 1);

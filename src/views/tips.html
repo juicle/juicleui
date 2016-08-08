@@ -1,0 +1,172 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>提示框</h4>
+				<p>提示框给用户提供了各种动作的反馈。这些反馈能帮助用户解释他们在一个事件上是成功还是失败了。</p>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>提示构建块</h4>
+					<p>
+						所有的提示框建立在
+						<code>.alert</code>
+						类, 并且它也有很多的修饰类。
+		                	举个栗子，下面是一个右侧带图标的带
+						<code>a-is-primary</code>
+						主要信息类的提示。
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="row-fluid">
+					<div class="alert a-is-info">
+						<p>
+							这是一些 <strong>重要信息</strong>
+							请注意。
+							<span class="fa fa-info"></span>
+						</p>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"alert a-is-info"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">p</span>&gt;</span>这是一些 <span class="tag">&lt;<span class="title">strong</span>&gt;</span>重要信息<span class="tag">&lt;<span class="title">/strong</span>&gt;</span> 请注意。<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="attribute">"fa fa-info"</span>&gt;</span><span class="tag">&lt;<span class="title">/span</span>&gt;</span>&lt;<span class="title">/p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>使用Jquery来移除或隐藏提示框</h4>
+					<p>
+						使用DOM，可以灵活地达到移除提示框或验证的目的，例如，只隐藏他们，所以他们不可见。下面是使用jQuery的一个栗子。
+						<pre><code class="javascript">$('.close').click(function(e) {
+  var elem = $(e.currentTarget).parents('.alert-removed');
+  elem.removeClass('in');
+  
+  setTimeout(function () {
+    elem.remove();
+  }, 450);
+});
+
+// This just hides the element
+$('.close').click(function(e){
+  var hiding = $(e.currentTarget).parents('.alert-hide');
+  hiding.removeClass('in');
+});</code></pre>
+					</p>
+
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="row-fluid">
+					<div class="alert a-is-danger alert-removed fade in">
+						<p>
+							点击 X 来 <strong>移除提示框</strong>
+							. 使用类
+							<code>.alert-removed</code>
+							来移除这个提示框
+							<span class="close">&times;</span>
+						</p>
+					</div>
+				</div>
+
+				<br />
+
+				<div class="row-fluid">
+					<div class="alert a-is-success alert-hide fade in">
+						<p>
+							点击 X 来
+							<strong>隐藏这个提示框</strong>
+							. 使用类
+							<code>.alert-hide</code>
+							来因隐藏这个提示框
+							<span class="close">&times;</span>
+						</p>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"alert a-is-danger alert-removed fade in"</span>&gt;</span>
+ …
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"alert a-is-success alert-hide fade in"</span>&gt;</span>
+  …
+ <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>带按钮组和超链接的提示框</h4>
+					<p>创建带按钮组和超链接的提示框。</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="row-fluid">
+					<div class="alert a-is-danger alert-removed fade in">
+						<span class="close">&times;</span>
+						<h4>没有成功！</h4>
+						<p>
+							你需要做一些处理。
+							<a href="#">到这里获取更多信息</a>
+						</p>
+						<p>
+							<button class="btn btn-danger close left-float">做一些响应</button>
+							<button class="btn btn-link">取消</button>
+						</p>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"alert a-is-danger alert-removed fade in"</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="attribute">"close"</span>&gt;</span>X<span class="tag">&lt;<span class="title">/span</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">h4</span></span>&gt;</span>没有成功！<span class="tag">&lt;<span class="title">/h4</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">p</span>&gt;<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="attribute">"#"</span>&gt;</span>到这里获取更多信息<span class="tag">&lt;<span class="title">/a</span>&gt;</span>&lt;<span class="title">/p</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">p</span>&gt;
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="attribute">"btn btn-danger"</span>&gt;</span>做一些响应<span class="tag">&lt;<span class="title">/button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="attribute">"btn btn-link"</span>&gt;</span>取消<span class="tag">&lt;<span class="title">/button</span>&gt;</span>
+ &lt;<span class="title">/p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/div</span>&gt;</span></code></pre>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>
+		hljs.initHighlightingOnLoad();
+
+		// This removes the element from the DOM
+		$('.close').click(function(e) {
+		  var elem = $(e.currentTarget).parents('.alert-removed');
+		  elem.removeClass('in');
+		  
+		  setTimeout(function () {
+		    elem.remove();
+		  }, 450);
+		});
+
+		// This just hides the element
+		$('.close').click(function(e){
+		  var hiding = $(e.currentTarget).parents('.alert-hide');
+		  hiding.removeClass('in');
+		});
+   
+	</script>

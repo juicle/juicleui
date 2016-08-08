@@ -1,0 +1,219 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid12">
+			<div class="content-main">
+
+				<h4>让我们开始把！</h4>
+				<p>这是一个教我们应用JUICLEUI框架来快速搭建网站界面的入门手册</p>
+				<hr>
+				<section>
+					<h4>你首先需要下载框架</h4>
+					<p>
+						所有代码文件都能在
+						<a href="http://pan.baidu.com/share/home?uk=373155424#category/type=0" target="blank">云盘里</a>
+						找到
+					</p>
+
+					<h4>JUICLEUI源文件</h4>
+					<p>文件包含所有的HTML,CSS,JS图片和字体文件。你也可以改进JUICLEUI。在此之前，你最好了解一些基础的前端技术。</p>
+					<p>
+						<a href="http://pan.baidu.com/share/home?uk=373155424#category/type=0" target="blank" class="btn btn-default-gradient">下载JUICLEUI源文件</a>
+					</p>
+
+				</section>
+
+				<hr />
+
+				<div>
+					<div class="row-fluid">
+						<h4>文件结构</h4>
+						<p>
+							下载完成后，解压即可看到所有的文件。JUICLEUI保持在最轻型的状态，让你在开发的时候有更大的发展空间，同时我们也封装了一些组件的样式。这些都可以在
+							<code>CSS</code>
+							文件里找到并修改。
+						</p>
+						<div class="responsive-table">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>文件</th>
+										<th>描述</th>
+									</tr>
+									<tbody>
+										<tr>
+											<td>
+												<code>/css</code>
+											</td>
+											<td>包含主要的框架和样式文件</td>
+										</tr>
+										<tr>
+											<td>
+												<code>/js</code>
+											</td>
+											<td>包含各种Javascript插件和Jquery框架文件</td>
+										</tr>
+										<tr>
+											<td>
+												<code>/fonts</code>
+											</td>
+											<td>包含Awesome 图标文件</td>
+										</tr>
+										<tr>
+											<td>
+												<code>/../assets/images</code>
+											</td>
+											<td>包含JUICLEUI展示网站应用到的图片文件</td>
+										</tr>
+									</tbody>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<hr />
+
+				<div>
+					<div class="row-fluid">
+						<h4>设置你的源代码文件</h4>
+						<p>你会在根目录找到你需要设置和修改的所有文件</p>
+					</div>
+					<pre><code class="xml"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"css/yourfile.css"</span> /&gt;</span>
+		<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/yourfile.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+	<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+	<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></pre>
+				</div>
+
+				<hr />
+
+				<div>
+					<div class="row-fluid">
+						<h4>Viewport标签</h4>
+						<p>
+							JUICLEUI采用了自适应网格系统，所以在
+							<code>head</code>
+							标签内包含了viewport标签。
+						</p>
+					</div>
+					<pre><code class="xml"><span class="tag">&lt;<span class="title">meta <span class="tag">name</span><span class="attribute"></span>=<span class="value">"viewport"</span> <span class="tag">content</span><span class="attribute"></span>=<span class="value">"width=device-width, initial-scale=1.0"</span></span>&gt;</span></code></pre>
+				</div>
+
+				<hr />
+
+				<div>
+					<div class="row-fluid">
+						<div class="col8">
+							<h4>支持的浏览器</h4>
+							<p>
+								JUICLEUI不仅支持最新的浏览器还兼容拥有较大用户量的IE较低版本的浏览器。我们支持最新的桌面和手持设备显示器，老式的IE浏览器只做到兼容排版和布局，动态及美观的效果不能完全支持。我们支持如下最新版本的5种浏览器。
+							</p>
+						</div>
+						<div class="responsive-table">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Chrome</th>
+										<th>Firefox</th>
+										<th>Internet Explorer</th>
+										<th>Opera</th>
+										<th>Safari</th>
+									</tr>
+									<tbody>
+										<tr>
+											<td>Mac OS X</td>
+											<td> <i class="fa fa-check success-icon"></i>
+											</td>
+											<td> <i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-times fail-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Windows</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-times fail-icon"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>Android</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-times fail-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>iOS</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-times fail-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+											<td>
+												<i class="fa fa-check success-icon"></i>
+											</td>
+										</tr>
+										<tr></tr>
+									</tbody>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>hljs.initHighlightingOnLoad();</script>

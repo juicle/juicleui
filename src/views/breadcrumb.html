@@ -1,0 +1,92 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>面包屑/Breadcrumb</h4>
+				<p>
+					创建面包屑导航，显示用户在网站中的位置。
+				</p>
+				<hr />
+                
+                <div class="row-fluid">
+					<h4>基本的面包屑</h4>
+				</div>
+                
+                <p>
+					面包屑组件由并排排列的链接和链接与链接直接的间隔组成。
+				</p>
+
+				<div class="responsive-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>class</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>.breadcrumb</code></td>
+								<td>在<code>&lt;ul&gt;</code>元素中添加这个类定义面包屑组件。使用<code>&lt;a&gt;</code>元素作为列表中的面包屑项目。</td>
+							</tr>
+							<tr>
+								<td><code>.active</code></td>
+								<td>在列表项中添加这个类，对其中一个应用一个选中的状态，并且使用<code>&lt;span&gt;</code>替代<code>&lt;a&gt;</code>元素即可。</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				 <p>
+					使用一个 <code>&lt;span&gt;</code>替代<code>&lt;a&gt;</code>元素，用来禁用某个面包屑项目。
+				 </p>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<span>Category</span>
+						</li>
+						<li class="active">
+							<span>Post</span>
+						</li>
+					</ul>
+
+						<pre><code class="xml">&lt;ul class="breadcrumb"&gt;
+    &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;li class="active">&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+				
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>hljs.initHighlightingOnLoad();</script>

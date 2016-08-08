@@ -1,0 +1,470 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>网格系统</h4>
+				<h5>创建响应式网格布局。</h5>
+				<p>
+					创建一个响应式网格系统我们需要一个
+					<code>.container12</code>
+					的类。下面我们来演示下如何创建一个4单元格和一个8单元格的响应式网格布局。
+				</p>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"container12"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid4"</span>&gt;</span>
+        <span class="hljs-doctype"><span class="doctype">... </span></span>
+      <span class="tag">&lt;<span class="title">div</span>/&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid8"</span>&gt;</span>
+        <span class=""><span class="hljs-rules">... </span></span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+				<h5>创建流体网格布局。</h5>
+				<p>
+					创建一个流体网格布局（按照百分比来定义宽度的布局方式），只需要在
+					<code>.container12</code>
+					所在div的子div上加上
+					<code>.row-fluid</code>
+					这个类。下面我们来演示下如何创建一个4单元格和一个8单元格的流体网格布局。
+				</p>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"container12"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"row-fluid"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid4"</span>&gt;</span>
+        <span class="hljs-doctype"><span class="doctype">... </span></span>
+      <span class="tag">&lt;<span class="title">div</span>/&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid8"</span>&gt;</span>
+        <span class=""><span class="hljs-rules">... </span></span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<h4>12栏网格</h4>
+				<p>JUICLEUI的响应式和流体布局都使用12栏网格。</p>
+				<div class="row-fluid">
+					<div class="grid12">
+						<div class="ex-grid">.grid12</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid1">
+						<div class="ex-grid">.grid1</div>
+					</div>
+					<div class="grid11">
+						<div class="ex-grid">.grid11</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid2">
+						<div class="ex-grid">.grid2</div>
+					</div>
+					<div class="grid10">
+						<div class="ex-grid">.grid10</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid3">
+						<div class="ex-grid">.grid3</div>
+					</div>
+					<div class="grid9">
+						<div class="ex-grid">.grid9</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid4">
+						<div class="ex-grid">.grid4</div>
+					</div>
+					<div class="grid8">
+						<div class="ex-grid">.grid8</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid5">
+						<div class="ex-grid">.grid5</div>
+					</div>
+					<div class="grid7">
+						<div class="ex-grid">.grid7</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid6">
+						<div class="ex-grid">.grid6</div>
+					</div>
+					<div class="grid6">
+						<div class="ex-grid">.grid6</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid3">
+						<div class="ex-grid">.grid3</div>
+					</div>
+					<div class="grid3">
+						<div class="ex-grid">.grid3</div>
+					</div>
+					<div class="grid3">
+						<div class="ex-grid">.grid3</div>
+					</div>
+					<div class="grid3">
+						<div class="ex-grid">.grid3</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid4">
+						<div class="ex-grid">.grid4</div>
+					</div>
+					<div class="grid4">
+						<div class="ex-grid">.grid4</div>
+					</div>
+					<div class="grid4">
+						<div class="ex-grid">.grid4</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid2">
+						<div class="ex-grid">.grid2</div>
+					</div>
+					<div class="grid1">
+						<div class="ex-grid">.grid1</div>
+					</div>
+					<div class="grid9">
+						<div class="ex-grid">.grid9</div>
+					</div>
+				</div>
+
+				<hr />
+
+				<h4>网格的填充</h4>
+				<p>我们有时在一行内只显示几个单元格，其他单元格只用作填充。</p>
+				<div class="row-fluid">
+					<div class="grid1 prefix1 suffix10">
+						<div class="ex-grid">grid1</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid1 prefix2 suffix9">
+						<div class="ex-grid">grid1</div>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"container12"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid1 prefix1 suffix10"</span>&gt;</span>
+        <span class="hljs-doctype"><span class="doctype">... </span></span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid1 prefix2 suffix9"</span>&gt;</span>
+        <span class=""><span class="hljs-rules">... </span></span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<h4>网格的偏移</h4>
+				<p>
+					网格的偏移我们使用相对定位。
+					<code>push1</code>
+					为向左偏移一个网格，
+					<code>pull1</code>
+					为向左反向偏移一个网格。
+				</p>
+				<div class="row-fluid">
+					<div class="grid1 push1">
+						<div class="ex-grid">grid1</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="grid3">
+						<div class="ex-grid2">grid3</div>
+					</div>
+					<div class="grid1 pull1">
+						<div class="ex-grid">grid1</div>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"container12"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid1 push1"</span>&gt;</span>
+        <span class="hljs-doctype"><span class="doctype">... </span></span>
+      <span class="tag">&lt;<span class="title">div</span>/&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid1 pull1"</span>&gt;</span>
+        <span class="hljs-doctype"><span class="doctype">... </span></span>
+      <span class="tag">&lt;<span class="title">div</span>/&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<h4>网格嵌套</h4>
+				<p>
+					响应式网格系统的嵌套需要用到
+					<code>.alpha</code>
+					和
+					<code>.omega</code>
+					。流体布局则不添加这两个类。
+				</p>
+
+				<div class="row-fluid">
+					<div class="grid12 ex-grid2">
+						<p></p>
+						<p>grid12</p>
+						<div class="grid6 ex-grid">grid6</div>
+						<div class="grid6 ex-grid">grid6</div>
+					</div>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"container"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid12"</span>&gt;</span>
+         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"grid6 alpha"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span></span>
+         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"grid6 omega"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span></span>
+       <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<h4>单元格的宽度</h4>
+				<p>
+					响应式网格系统的单元格在不同设备的显示器下会有不同的宽度，HTML头部代码
+					<code>viewport</code>
+					的标签已设置了宽度等于设备宽度
+					<code>width=device-width</code>
+					，下面是一些具体的宽度。
+				</p>
+				<div class="responsive-table">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>单元格</th>
+								<th>% 宽（流体布局）</th>
+								<th>
+									宽屏
+									<br />
+									（ width > 1200px ）
+								</th>
+								<th>
+									桌面
+									<br />
+									（ 979px
+									< width < 1200px ）</th>
+										<th>
+											平板
+											<br />
+											（ width
+											< 980px ）</th>
+												<th>
+													手机
+													<br />
+													（ width
+													< 737px ）</th></tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<code>.grid12</code>
+														</td>
+														<td>97.916666666%</td>
+														<td>1160px</td>
+														<td>940px</td>
+														<td>97.916666666%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid11</code>
+														</td>
+														<td>89.583333333%</td>
+														<td>1060px</td>
+														<td>860px</td>
+														<td>89.583333333%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid10</code>
+														</td>
+														<td>81.25%</td>
+														<td>960px</td>
+														<td>780px</td>
+														<td>81.25%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid9</code>
+														</td>
+														<td>72.916666666%</td>
+														<td>860px</td>
+														<td>700px</td>
+														<td>72.916666666%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid8</code>
+														</td>
+														<td>64.583333333%</td>
+														<td>760px</td>
+														<td>620px</td>
+														<td>64.583333333%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid7</code>
+														</td>
+														<td>56.25%</td>
+														<td>660px</td>
+														<td>540px</td>
+														<td>56.25%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid6</code>
+														</td>
+														<td>47.916666666%</td>
+														<td>560px</td>
+														<td>460px</td>
+														<td>47.916666666%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid5</code>
+														</td>
+														<td>39.583333333%</td>
+														<td>460px</td>
+														<td>380px</td>
+														<td>39.583333333%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid4</code>
+														</td>
+														<td>31.25%</td>
+														<td>360px</td>
+														<td>300px</td>
+														<td>31.25%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid3</code>
+														</td>
+														<td>22.916666666%</td>
+														<td>260px</td>
+														<td>220px</td>
+														<td>4.125rem</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid2</code>
+														</td>
+														<td>14.583333333%</td>
+														<td>160px</td>
+														<td>140px</td>
+														<td>14.583333333%</td>
+														<td>100%</td>
+													</tr>
+													<tr>
+														<td>
+															<code>.grid1</code>
+														</td>
+														<td>6.25%</td>
+														<td>60px</td>
+														<td>60px</td>
+														<td>6.25%</td>
+														<td>100%</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<hr />
+
+										<div class="row-fluid">
+											<h4>自适应的代码</h4>
+											<p>
+												我们在构架上先引用960网格系统的样式
+												<code>grid.css</code>
+												（即桌面显示器的框架样式），然后加入
+												<code>responsive.css</code>
+												(包含了宽屏、平板和手机的框架样式)，最后加入用户自定义的
+												<code>custom-responsive.css</code>
+												(来实现布局和样式分离，你只需要在
+												<code>custom-responsive.css</code>
+												完成最后的自适应样式编写即可)。下面是自定义自适应文件里的媒体查询隔断代码。
+											</p>
+										</div>
+
+										<pre><code><span><span class="hljs-rules">@media</span> <span class="hljs-tag">(min-width: 1200px)</span> <span class="hljs-rules">{</span>
+  <span>/* Large Desktop screens */</span>
+  <span><span class="hljs-attribute">.yourclass</span> { <span class="hljs-tag"><span class="hljs-value">yourcode</span></span>; }
+<span class="hljs-rule"><span class="hljs-rules">}</span></span>
+
+<span><span class="hljs-rules">@media</span> <span class="hljs-tag">(min-width: 980px) and (max-width: 1199px)</span> <span class="hljs-rules">{</span>
+  <span>/* Desktop Screens */</span>
+  <span><span class="hljs-attribute">.yourclass</span> { <span class="hljs-tag"><span class="hljs-value">yourcode</span></span>; }
+<span class="hljs-rule"><span class="hljs-rules">}</span></span>
+
+<span><span class="hljs-rules">@media</span> <span class="hljs-tag">(max-width: 979px)</span> <span class="hljs-rules">{</span>
+  <span>/* Tablet screens */</span>
+  <span><span class="hljs-attribute">.yourclass</span> { <span class="hljs-tag"><span class="hljs-value">yourcode</span></span>; }
+<span class="hljs-rule"><span class="hljs-rules">}</span></span>
+
+<span><span class="hljs-rules">@media</span> <span class="hljs-tag">(max-width: 737px)</span> <span class="hljs-rules">{</span>
+  <span>/* Mobile screens */</span>
+  <span><span class="hljs-attribute">.yourclass</span> { <span class="hljs-tag"><span class="hljs-value">yourcode</span></span>; }
+<span class="hljs-rule"><span class="hljs-rules">}</span></span>
+
+</code></pre>
+
+										<hr />
+
+										<h4>流体布局中的特定类</h4>
+										<p>
+											有时候我们希望网格之间没有外间距，又可以实现类似
+											<code>.grid1</code>
+											这样简单的流体布局功能，我们添加了从
+											<code>.grid-width10</code>
+											到
+											<code>.grid-width100</code>
+											的10个特定流体布局的类。这些类只有浮动和百分比宽度的属性，可以实现无外间距和最简单的布局功能。下面我们来演示下如何创建一个30%宽和一个70%宽的流体网格布局。
+										</p>
+										<pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="attribute">"container12"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"row-fluid"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid-width30"</span>&gt;</span>
+        <span class="hljs-doctype"><span class="doctype">... </span></span>
+      <span class="tag">&lt;<span class="title">div</span>/&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span>"grid-width70"</span>&gt;</span>
+        <span class=""><span class="hljs-rules">... </span></span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+										<hr />
+
+										<div>
+											<h4>盒子模型</h4>
+											<p>
+												考虑到兼容性，我们的框架不使用
+												<code>box-sizing:border-box</code>
+												这种盒子模型。无论国内外，现在似乎都没有开发者领袖强力推行这样的方案。
+											</p>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<footer></footer>
+						<script>hljs.initHighlightingOnLoad();</script>

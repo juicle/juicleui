@@ -1,0 +1,115 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>文件上传</h4>
+				<p>允许用户通过文件表单或占位符域来上传文件</p>
+				<hr />
+
+				<div class="row-fluid">
+					<h4>用法</h4>
+				</div>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+                        <span id="picker_none" style="display:none"></span>
+			
+						<!--用来存放文件信息-->
+						<div id="thelist" class="uploader-list"></div>
+						<div class="row-fluid">
+						    <button id="picker_single" class="btn btn-primary">选择文件</button>
+							<button id="ctlBtn" class="btn btn-default">开始上传</button>
+						</div>
+	
+
+					<pre><code class="xml">&lt;div id=&quot;thelist&quot; class=&quot;uploader-list&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;row-fluid&quot;&gt;
+        &lt;button id=&quot;picker&quot; class=&quot;btn btn-primary&quot;&gt;选择文件&lt;/button&gt;
+	&lt;button id=&quot;ctlBtn&quot; class=&quot;btn btn-default&quot;&gt;开始上传&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+				<div class="row-fluid">
+					<h4>单图片上传</h4>
+				</div>
+
+				<p>
+					与普通文件上传相比，此demo演示了：文件过滤，图片预览，图片压缩上传等功能。
+				</p>
+
+				
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+			
+						<div id="fileList" class="uploader-list"></div>
+						<div class="row-fluid">
+						   <button id="filePicker" class="btn btn-primary">选择图片</button>
+                        </div>
+					<pre><code class="xml">&lt;div id=&quot;fileList&quot; class=&quot;uploader-list&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;row-fluid&quot;&gt;
+	&lt;button id=&quot;filePicker&quot; class=&quot;btn btn-primary&quot;&gt;选择图片&lt;/button&gt;
+ &lt;/div&gt;</code></pre>
+				</div>
+
+				<div class="row-fluid">
+					<h4>多图上传</h4>
+				</div>
+
+				<p>
+					您可以尝试文件拖拽，使用QQ截屏工具，然后激活窗口后粘贴，或者点击添加图片按钮
+				</p>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<pre><code class="xml">&lt;div id=&quot;uploader&quot;&gt;
+         &lt;div class=&quot;queueList&quot;&gt;
+                &lt;div id=&quot;dndArea&quot; class=&quot;placeholder&quot;&gt;
+                    	&lt;button id=&quot;filePicker_multi&quot; class=&quot;btn btn-primary&quot;&gt;选择图片&lt;/button&gt;
+                    	&lt;p&gt;&lt;span class=&quot;fa fa-upload&quot; style=&quot;font-size:18px;&quot;&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;或将照片拖到这里，单次最多可选300张&lt;/p&gt;
+                &lt;/div&gt;
+       &lt;/div&gt;
+      &lt;div class=&quot;statusBar&quot; style=&quot;display:none;&quot;&gt;
+                 &lt;div class=&quot;progress&quot;&gt;
+                    	&lt;span class=&quot;text&quot;&gt;0%&lt;/span&gt;
+                    	&lt;span class=&quot;percentage&quot;&gt;&lt;/span&gt;
+                  &lt;/div&gt;
+                 &lt;div class=&quot;info&quot;&gt;&lt;/div&gt;
+                 &lt;div class=&quot;btns&quot;&gt;
+                    	&lt;div id=&quot;filePicker2&quot;&gt;&lt;/div&gt;
+                    	&lt;div class=&quot;uploadBtn btn btn-default&quot;&gt;开始上传&lt;/div&gt;
+                 &lt;/div&gt;
+       &lt;/div&gt;
+ &lt;/div&gt;</code></pre>
+ <p>
+ 	<a href="multi-upload.html" class="btn btn-primary" target="_blank">运行查看结果</a>
+ </p>
+				</div>
+
+
+				<p>
+					详细使用方法参见<a href="http://fex.baidu.com/webuploader" target="_blank">http://fex.baidu.com/webuploader/document.html</a>
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+
+<script src="src/assets/extend/upload_single.js"></script>  
+
+<script>hljs.initHighlightingOnLoad();</script>

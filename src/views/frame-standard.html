@@ -1,0 +1,446 @@
+	<header class="head-nav mobile-hidden">
+		<div class="container12">
+		<div class="grid4 tablet12">
+			<div class="logo">
+				<img src="../assets/images/logo.png" alt="" />
+			</div>
+		</div>
+		<div class="grid8 tablet12">
+			<nav class="text-right">
+				<a href="index.html">首页</a>
+				<a href="frame-standard.html">框架</a>
+				<a href="css-table.html">CSS</a>
+				<a href="com-page.html">组件</a>
+				<a href="js-flash.html">JS插件</a>
+			</nav>
+		</div>
+	</div>
+	</header>
+
+	<div class="mobile-nav">
+		<div class="mobile-nav-bg"></div>
+		<a href="#mobile-nav-menu" class="open toggle-btn"><i class="fa fa-bars"></i></a>
+		<div id="mobile-nav-menu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="frame-standard.html">框架</a></li>
+				<li><a href="css-table.html">CSS</a></li>
+				<li><a href="com-page.html">组件</a></li>
+				<li><a href="js-flash.html">JS插件</a></li>
+			</ul>
+			<a href="#" class="close toggle-btn"><i class="fa fa-close"></i></a>
+		</div>
+	</div>
+
+	<div class="page-main">
+		<div class="container12">
+
+			<div class="grid2">
+				<ul class="side-nav">
+					<li class="nav-title">概述</li>
+					<li><a href="base-start.html">开始体验</a></li>
+					<li><a href="base-html5.html">HTML5 文档</a></li>
+					<li><a href="base-media.html">媒体查询</a></li>
+					<li class="nav-title">资源包</li>
+					<li><a href="item-free.html">开源的项目</a></li>
+					<li><a href="item-cpb.html">兼容</a></li>
+					<li class="nav-title">框架</li>
+					<li><a href="frame-standard.html" class="active">规范</a></li>
+					<li><a href="frame-grid.html">网格系统</a></li>
+					<li><a href="frame-set.html">配置</a></li>
+					<li><a href="frame-txt.html">文本</a></li>
+					<li><a href="frame-color.html">颜色</a></li>
+					<li class="nav-title">CSS</li>
+					<li><a href="css-table.html">表格</a></li>
+					<li><a href="css-form.html">表单</a></li>
+					<li><a href="css-button.html">按钮</a></li>
+					<li><a href="css-info.html">角标</a></li>
+					<li><a href="css-panel.html">面板</a></li>
+					<li><a href="css-inputs.html">输入集合</a></li>
+					<li><a href="css-buttons.html">按钮集合</a></li>
+					<li><a href="css-tips.html">提示框</a></li>
+					<li><a href="css-tab.html">标签</a></li>
+					<li class="nav-title">组件</li>
+					<li><a href="com-page.html">分页</a></li>
+					<li><a href="com-nav.html">导航</a></li>
+					<li><a href="com-list.html">列组</a></li>
+					<li class="nav-title">JS插件</li>
+					<li><a href="js-flash.html">幻灯片</a></li>
+				</ul>
+			</div>
+
+			<div class="grid10">
+				<div class="content-main">
+
+					<h4>HTML规范</h4>
+		            <p>
+		            1. 文件应以“ <code>&lt;!DOCTYPE ......&gt;</code> ”首行顶格开始，推荐使用“ <code>&lt;!DOCTYPE html&gt;</code> ”。<br />
+		            2. 必须申明文档的编码 <code>charset</code>，且与文件本身编码保持一致，推荐使用UTF-8编码 <code>&lt;meta charset="utf-8"/&gt;</code> 。<br />
+		            3. 用div代替table布局，可以使HTML更具灵活性，也方便利用CSS控制。<br />
+		            4. table不建议用于布局，但表现具有明显表格形式的数据，table还是首选。<br />
+		            5. 结构、表现、行为三者分离，在CSS引用的顺序上依次引用结构 - 表现 - 行为。<br />
+		            6. 表现层的命名推荐用有语义的英文单词和连接符 <code>-</code> 组合的方式，比如 <code>.home-news</code> 。下面是结构、表现分离的例子<br /></p>
+		            <p>
+<pre><code>&lt;div class=&quot;home-news&quot;&gt;
+	&lt;div class=&quot;container12&quot;&gt;
+		&lt;div class=&quot;grid6&quot;&gt;
+			&lt;div class=&quot;news-img&quot;&gt;...&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;grid6&quot;&gt;
+			&lt;div class=&quot;news-txt&quot;&gt;...&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre></p>
+					<hr />
+
+	                <h4>HTML规范 - 字符实体</h4>
+		            <p>
+		               以实体代替与HTML语法相同的字符，避免浏览解析错误，特别是只展示HTML代码而不运行HTML代码的一定要用字符实体（下面表格内没有出现的字符都不建议使用实体）。 
+		            </p>
+
+		            <div class="responsive-table">
+		                <table class="table">
+		                  <thead>
+		                    <tr>
+		                      <th>字符</th>
+		                      <th>名称</th>
+		                      <th>实体名</th>
+		                    </tr>
+		                  </thead>
+		                  <tbody>
+		                    <tr>
+		                      <td>&quot;</td>
+		                      <td>双引号</td>
+		                      <td>&amp;quot;</td>
+		                    </tr>
+		                    <tr>
+		                      <td>&amp;</td>
+		                      <td>&amp;符</td>
+		                      <td>&amp;amp;</td>
+		                    </tr>
+		                    <tr>
+		                      <td>&lt;</td>
+		                      <td>左尖括号（小于号）</td>
+		                      <td>&amp;lt;</td>
+		                    </tr>
+		                    <tr>
+		                      <td>&gt;</td>
+		                      <td>右尖括号（大于号）</td>
+		                      <td>&amp;gt;</td>
+		                    </tr>
+		                    <tr>
+		                      <td>&nbsp;</td>
+		                      <td>空格</td>
+		                      <td>&amp;nbsp;</td>
+		                    </tr>
+		                  </tbody>
+		                </table>
+	              	</div>
+
+            		<hr />
+
+		          
+          			
+          			<h4>CSS规范 - 统一语义命名</h4>
+          			<p>我们使用"-"连字符，并且按照语义的先后顺序组合各种命名的类。</p>
+          			<div class="row-fluid">
+          				<div class="grid6">
+          					<p>布局</p>
+				            <div class="responsive-table">
+					            <table class="table table-bordered">
+					                <thead>
+					                  <tr>
+					                    <th>语义</th>
+					                    <th>命名</th>
+					                  </tr>
+					                </thead>
+					                <tbody>
+					                  <tr>
+					                    <td>头部</td>
+					                    <td><code>head</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>主体</td>
+					                    <td><code>body</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>尾部</td>
+					                    <td><code>foot</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>主栏</td>
+					                    <td><code>main</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>侧栏</td>
+					                    <td><code>side</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>首页</td>
+					                    <td><code>home</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>内页</td>
+					                    <td><code>page</code></td>
+					                  </tr>
+					                </tbody>
+					              </table>
+					        </div>
+
+							<p>模块</p>
+				            <div class="responsive-table">
+					            <table class="table table-bordered">
+					                <thead>
+					                  <tr>
+					                    <th>语义</th>
+					                    <th>命名</th>
+					                  </tr>
+					                </thead>
+					                <tbody>
+					                  <tr>
+					                    <td>导航</td>
+					                    <td><code>nav</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>面包屑</td>
+					                    <td><code>crumb</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>菜单</td>
+					                    <td><code>menu</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>选项卡</td>
+					                    <td><code>tab</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>标题</td>
+					                    <td><code>title</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>内容</td>
+					                    <td><code>content</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>列表</td>
+					                    <td><code>list</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>表格</td>
+					                    <td><code>table</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>表单</td>
+					                    <td><code>form</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>热点</td>
+					                    <td><code>hot</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>排行</td>
+					                    <td><code>top</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>登录</td>
+					                    <td><code>login</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>标志</td>
+					                    <td><code>logo</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>广告</td>
+					                    <td><code>advertise</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>搜索</td>
+					                    <td><code>search</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>幻灯片</td>
+					                    <td><code>slide</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>提示</td>
+					                    <td><code>tips</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>帮助</td>
+					                    <td><code>help</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>新闻</td>
+					                    <td><code>news</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>下载</td>
+					                    <td><code>download</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>注册</td>
+					                    <td><code>regist</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>投票</td>
+					                    <td><code>vote</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>按钮</td>
+					                    <td><code>button</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>输入</td>
+					                    <td><code>input</code></td>
+					                  </tr>
+					                </tbody>
+					              </table>
+					        </div>
+
+					        <p>功能</p>
+				            <div class="responsive-table">
+					            <table class="table table-bordered">
+					                <thead>
+					                  <tr>
+					                    <th>语义</th>
+					                    <th>命名</th>
+					                  </tr>
+					                </thead>
+					                <tbody>
+					                  <tr>
+					                    <td>浮动清除</td>
+					                    <td><code>clear</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>向左浮动</td>
+					                    <td><code>left-float</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>向右浮动</td>
+					                    <td><code>right-float</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>文本居中</td>
+					                    <td><code>text-center</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>文本居右</td>
+					                    <td><code>text-right</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>文本居左</td>
+					                    <td><code>text-left</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>桌面显示</td>
+					                    <td><code>desktop-show</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>桌面隐藏</td>
+					                    <td><code>desktop-hidden</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>平板显示</td>
+					                    <td><code>tablet-show</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>平板隐藏</td>
+					                    <td><code>tablet-hidden</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>手机显示</td>
+					                    <td><code>mobile-show</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>手机隐藏</td>
+					                    <td><code>mobile-hidden</code></td>
+					                  </tr>
+					                </tbody>
+					              </table>
+					        </div>
+
+					        <p>状态</p>
+				            <div class="responsive-table">
+					            <table class="table table-bordered">
+					                <thead>
+					                  <tr>
+					                    <th>语义</th>
+					                    <th>命名</th>
+					                  </tr>
+					                </thead>
+					                <tbody>
+					                  <tr>
+					                    <td>选中</td>
+					                    <td><code>selected</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>当前</td>
+					                    <td><code>current</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>显示</td>
+					                    <td><code>show</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>隐藏</td>
+					                    <td><code>hide</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>打开</td>
+					                    <td><code>open</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>关闭</td>
+					                    <td><code>close</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>出错</td>
+					                    <td><code>error</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>成功</td>
+					                    <td><code>success</code></td>
+					                  </tr>
+					                  <tr>
+					                    <td>不可用</td>
+					                    <td><code>disabled</code></td>
+					                  </tr>
+					                </tbody>
+					              </table>
+					        </div>
+
+					    </div>
+					</div>
+		            
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container12">
+		<div class="grid8 tablet12">
+			CCUI网站由
+			<a href="http://weibo.com/yubaba1986" target="blank">@LEON</a>
+			设计，我们使用HTML5、CSS3、Jquery、Sublime、IETester、Firebug、PS14.2.1
+		</div>
+		<div class="grid4 tablet12">
+			<div class="foot-nav">
+				<img src="../assets/images/logo2.png" alt="" />
+				<a href="index.html">首页</a>
+				|
+				<a href="frame-standard.html">框架</a>
+				|
+				<a href="css-table.html">CSS</a>
+				|
+				<a href="com-page.html">组件</a>
+				|
+				<a href="js-flash.html">JS插件</a>
+			</div>
+		</div>
+	</div>
+	</footer>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>

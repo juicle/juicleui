@@ -1,0 +1,558 @@
+
+[class*='animation-'] {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* Hide animated element if scrollspy is used */
+@media screen {
+
+    [data-scrollspy*='animation-']:not([data-scrollspy*='target']) { opacity: 0; }
+
+}
+
+/*
+ * Fade
+ * Higher specificity (!important) needed because of reverse modifier
+ */
+
+.animation-fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-timing-function: linear !important;
+    animation-timing-function: linear !important;
+}
+
+/*
+ * Fade with scale
+ */
+
+.animation-scale-up {
+    -webkit-animation-name: fade-scale-02;
+    animation-name: fade-scale-02;
+}
+
+.animation-scale-down {
+    -webkit-animation-name: fade-scale-18;
+    animation-name: fade-scale-18;
+}
+
+/*
+ * Fade with slide
+ */
+
+.animation-slide-top {
+    -webkit-animation-name: fade-top;
+    animation-name: fade-top;
+}
+
+.animation-slide-bottom {
+    -webkit-animation-name: fade-bottom;
+    animation-name: fade-bottom;
+}
+
+.animation-slide-left {
+    -webkit-animation-name: fade-left;
+    animation-name: fade-left;
+}
+
+.animation-slide-right {
+    -webkit-animation-name: fade-right;
+    animation-name: fade-right;
+}
+
+/*
+ * Scale
+ */
+
+.animation-scale {
+    -webkit-animation-name: scale-12;
+    animation-name: scale-12;
+}
+
+/*
+ * Shake
+ */
+
+.animation-shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+
+/* Direction modifiers
+ ========================================================================== */
+
+.animation-reverse {
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+
+/* Duration modifiers
+========================================================================== */
+
+.animation-15 {
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+
+
+/* Origin modifiers
+========================================================================== */
+
+.animation-top-left {
+     -webkit-transform-origin: 0 0;
+     transform-origin: 0 0;
+}
+
+.animation-top-center {
+     -webkit-transform-origin: 50% 0;
+     transform-origin: 50% 0;
+}
+
+.animation-top-right {
+     -webkit-transform-origin: 100% 0;
+     transform-origin: 100% 0;
+}
+
+.animation-middle-left {
+     -webkit-transform-origin: 0 50%;
+     transform-origin: 0 50%;
+}
+
+.animation-middle-right {
+     -webkit-transform-origin: 100% 50%;
+     transform-origin: 100% 50%;
+}
+
+.animation-bottom-left {
+     -webkit-transform-origin: 0 100%;
+     transform-origin: 0 100%;
+}
+
+.animation-bottom-center {
+     -webkit-transform-origin: 50% 100%;
+     transform-origin: 50% 100%;
+}
+
+.animation-bottom-right {
+     -webkit-transform-origin: 100% 100%;
+     transform-origin: 100% 100%;
+}
+
+
+/* Sub-object: `animation-hover`
+========================================================================== */
+
+/*
+ * Enable animation only on hover
+ * Note: Firefox also needs this because animations are not triggered when switching between display `hidden` and `block`
+ */
+
+.animation-hover:not(:hover),
+.animation-hover:not(:hover) [class*='animation-'],
+.touch .animation-hover:not(.hover),
+.touch .animation-hover:not(.hover) [class*='animation-'] {
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+
+/* Keyframes: Fade
+ * Used by dropdown, datepicker and slideshow component
+ ========================================================================== */
+
+@-webkit-keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* Keyframes: Fade with slide
+ ========================================================================== */
+
+/*
+ * Top
+ */
+
+@-webkit-keyframes fade-top {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fade-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+ * Bottom
+ */
+
+@-webkit-keyframes fade-bottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fade-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+ * Left
+ */
+
+@-webkit-keyframes fade-left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*
+ * Right
+ */
+
+@-webkit-keyframes fade-right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Keyframes: Fade with scale
+ ========================================================================== */
+
+/*
+ * Scale by 0.2
+ */
+
+@-webkit-keyframes fade-scale-02 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes fade-scale-02 {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*
+ * Scale by 1.5
+ * Used by slideshow component
+ */
+
+@-webkit-keyframes fade-scale-15 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes fade-scale-15 {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*
+ * Scale by 1.8
+ */
+
+@-webkit-keyframes fade-scale-18 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.8);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes fade-scale-18 {
+    0% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Keyframes: Slide
+ * Used by slideshow component
+ ========================================================================== */
+
+/*
+ * Left
+ */
+
+@-webkit-keyframes slide-left {
+    0% { -webkit-transform: translateX(-100%); }
+    100% { -webkit-transform: translateX(0); }
+}
+
+@keyframes slide-left {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+/*
+ * Right
+ */
+
+@-webkit-keyframes slide-right {
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(0); }
+}
+
+@keyframes slide-right {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+/*
+ * Left third
+ */
+
+@-webkit-keyframes slide-left-33 {
+    0% { -webkit-transform: translateX(33%); }
+    100% { -webkit-transform: translateX(0); }
+}
+
+@keyframes slide-left-33 {
+    0% { transform: translateX(33%); }
+    100% { transform: translateX(0); }
+}
+
+/*
+ * Right third
+ */
+
+@-webkit-keyframes slide-right-33 {
+    0% { -webkit-transform: translateX(-33%); }
+    100% { -webkit-transform: translateX(0); }
+}
+
+@keyframes slide-right-33 {
+    0% { transform: translateX(-33%); }
+    100% { transform: translateX(0); }
+}
+
+
+/* Keyframes: Scale
+ ========================================================================== */
+
+@-webkit-keyframes scale-12 {
+    0% { -webkit-transform: scale(1.2); }
+    100% { -webkit-transform: scale(1); }
+}
+
+@keyframes scale-12 {
+    0% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+
+/* Keyframes: Rotate
+ * Used by icon component
+ ========================================================================== */
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(359deg); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
+
+/* Keyframes: Shake
+ ========================================================================== */
+
+@-webkit-keyframes shake {
+    0%, 100% { -webkit-transform: translateX(0); }
+    10% { -webkit-transform: translateX(-9px); }
+    20% { -webkit-transform: translateX(8px); }
+    30% { -webkit-transform: translateX(-7px); }
+    40% { -webkit-transform: translateX(6px); }
+    50% { -webkit-transform: translateX(-5px); }
+    60% { -webkit-transform: translateX(4px); }
+    70% { -webkit-transform: translateX(-3px); }
+    80% { -webkit-transform: translateX(2px); }
+    90% { -webkit-transform: translateX(-1px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10% { transform: translateX(-9px); }
+    20% { transform: translateX(8px); }
+    30% { transform: translateX(-7px); }
+    40% { transform: translateX(6px); }
+    50% { transform: translateX(-5px); }
+    60% { transform: translateX(4px); }
+    70% { transform: translateX(-3px); }
+    80% { transform: translateX(2px); }
+    90% { transform: translateX(-1px); }
+}
+
+
+/* Keyframes: Fade with slide fixed
+ * Used by dropdown and search component
+ ========================================================================== */
+
+/*
+ * Top fixed
+ */
+
+@-webkit-keyframes slide-top-fixed {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes slide-top-fixed {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+ * Bottom fixed
+ */
+
+@-webkit-keyframes slide-bottom-fixed {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes slide-bottom-fixed {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+// Hooks
+// ========================================================================
+
+.hook-animation-misc;
+
+.hook-animation-misc() {}

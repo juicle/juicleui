@@ -1,0 +1,83 @@
+@tab-main-border:1px solid #ddd;  
+@tab-main-background:#f4f4f4;
+@tab-main-height:30px;
+@tab-main-pad:0 20px; 
+@tab-main-on-background:#fff;
+
+@tab-inner-pad:15px 15px 0 15px; 
+@tab-inner-height:24px;
+@tab-inner-on-background:#ccc;
+
+
+.tabbox{
+ width:100%; 
+ border:@tab-main-border; 
+ text-align:left;  
+ .hd{ 
+    height:@tab-main-height; 
+    line-height:@tab-main-height; 
+    background:@tab-main-background; 
+    padding:@tab-main-pad; 
+    border-bottom:@tab-main-border;  
+    position:relative; 
+    >ul{
+      float:left;
+      position:absolute;
+      left:20px; 
+      top:-1px; 
+      height:@tab-main-height + 2;   
+    } 
+    >ul li{ 
+        float:left; 
+        padding:0 15px; 
+        cursor:pointer;  
+    }
+    >ul li.on{ 
+        height:@tab-main-height;  
+        background:@tab-main-on-background; 
+        border:@tab-main-border; 
+        border-bottom:2px solid @tab-main-on-background; 
+    }
+  }
+}
+        
+.tabboxin{ 
+    padding:@tab-inner-pad;  
+    .inHd{ 
+        height:@tab-inner-height; 
+        line-height:@tab-inner-height; 
+        border-bottom:1px solid #ccc; 
+        padding:0 10px;   
+        ul{ 
+            overflow:hidden; zoom:1; 
+        }
+        ul li{ 
+            height:@tab-inner-height; 
+            width:auto; 
+            padding:0 12px;
+            text-align:center; 
+            float:left; 
+            cursor:pointer;  
+        }
+        ul li.on{ 
+            background:@tab-inner-on-background; 
+            color:#fff;  
+        }
+    }
+    .inBd{
+        ul{ 
+            padding:15px;  
+            zoom:1; 
+            overflow:hidden;   
+        }
+        li{ 
+            height:@tab-inner-height; 
+            line-height:@tab-inner-height; 
+            overflow:hidden; 
+            zoom:1;  
+        }
+        li .date{ 
+            float:right;   
+        }
+    }
+}

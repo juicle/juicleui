@@ -1,0 +1,111 @@
+.table_style(@bc,@fc){
+   background-color: @bc;
+   color: @fc;
+}
+
+.padding (@type, @value) when (@type = horizontal) {
+    padding-left:@value;
+    padding-right:@value;
+}
+
+.padding (@type, @value) when (@type = vertical) {
+    padding-top:@value;
+    padding-bottom:@value;
+}
+
+.padding (@type, @value) {
+    padding-@{type}:@value;
+
+}
+
+.btn(@h,@v){
+	padding: @h @v;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	float: left;
+	display: inline-block;
+}
+
+.border-top-radius(@v){
+  border-top-radius:@v;
+}
+
+.form-element-size(@p,@h,@f){
+	padding: @p;
+	height: @h;
+	line-height: @h;
+	font-size: @f;
+}
+
+.border_radius(@value){
+    -webkit-border-radius: @value;
+	-moz-border-radius: @value;
+	-ms-border-radius: @value;
+	-o-border-radius: @value;
+	border-radius: @value;
+}
+
+.box_shadow(@value){
+	-webkit-box-shadow:@value;
+	-moz-box-shadow:@value;
+	box-shadow:@value;
+}
+
+.transition (@v) {
+    -webkit-transition: @v;
+    -moz-transition: @v;
+    -o-transition: @v;
+    -ms-transition: @v;
+    transition: @v;
+}
+
+
+
+.btn-variant(@btn-color,@btn-background,@btn-border,@hover-background,@hover-border,@active-background,@active-border){
+	color: @btn-color;
+	background-color: @btn-background;
+	border-color: @btn-border;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	text-shadow: none;
+	&:hover {
+	   background-color: @hover-background;
+	   border-color: @hover-border;
+    }
+    &:active {
+	   color: @btn-color;
+	   background-color: @active-background;
+	   border-color: @active-border;
+	   -webkit-box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+	   -moz-box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+	   box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+	   outline: 0;
+    }
+}
+.btn-variant-outline(@btn-color,@btn-border,@hover-background,@hover-color,@hover-border){
+	color: @btn-color;
+	background-color: transparent;
+	border-color: @btn-border;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	text-shadow: none;
+	&:hover {
+	   border-color: @hover-border;
+	   color: @hover-color;
+	   background-color: @hover-background;
+	   text-decoration: none;
+    }
+    &:active {
+	   -webkit-box-shadow: inset 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: inset 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+	   box-shadow: inset 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+

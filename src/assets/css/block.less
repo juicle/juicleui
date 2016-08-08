@@ -1,0 +1,74 @@
+@block-padding-vertical:20px;
+@block-padding-vertical-large:50px;
+
+@block-large-padding-vertical:@block-padding-vertical;
+@block-large-padding-vertical-medium: @block-padding-vertical-large;
+@block-large-padding-vertical-large:100px;
+
+@block-default-background:@color-white;
+@block-muted-background: lighten(@color-default,36%);
+@block-primary-background: @color-main;
+
+.block {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: @block-padding-vertical;
+    padding-bottom: @block-padding-vertical;
+}
+
+@media (min-width: 768px) {
+    .block {
+        padding-top: @block-padding-vertical-large;
+        padding-bottom: @block-padding-vertical-large;
+    }
+
+    .block-large {
+        padding-top: @block-large-padding-vertical-medium;
+        padding-bottom: @block-large-padding-vertical-medium;
+    }
+
+}
+
+
+.block:before,
+.block:after {
+    content: "";
+    display: table;
+}
+
+.block:after { clear: both; }
+
+
+.block > :last-child { margin-bottom: 0; }
+
+
+.block-large {
+    padding-top: @block-large-padding-vertical;
+    padding-bottom: @block-large-padding-vertical;
+}
+
+
+@media (min-width: 960px) {
+
+    .block-large {
+        padding-top: @block-large-padding-vertical-large;
+        padding-bottom: @block-large-padding-vertical-large;
+    }
+
+}
+
+.block-default {
+    background: @block-default-background;
+}
+
+
+
+.block-muted {
+    background: @block-muted-background;
+}
+
+
+.block-primary {
+    background: @block-primary-background;
+}
+

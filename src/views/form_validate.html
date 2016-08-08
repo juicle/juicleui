@@ -1,0 +1,154 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>表单验证</h4>
+				<p>创建一个表单实例开始验证(参照插件<a href="https://jqueryvalidation.org/documentation/">jquery-validate</a>)</p>
+				<hr />
+
+				<div class="row-fluid">
+					<h4>用法</h4>
+				</div>
+
+				<div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<form id="formvalidate">
+						<div class="form-group">
+							<div class="form-left">手机号码</div>
+							<div class="form-middle">
+								<input type="text" class="form-element" id="phone" name="phone" placeholder="你的手机号码"></div>
+							<div class="form-right">
+								<span class="errormsg"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="form-left">性别</div>
+							<div class="form-middle">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="sex" value="1" id="sex">男</label>
+									<label class="label-spacing">
+										<input type="checkbox" name="sex" value="0" id="sex">女</label>
+								</div>
+							</div>
+							<div class="form-right">
+								<span class="errormsg"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="form-left">简介</div>
+							<div class="form-mright">
+								<textarea class="form-textarea" style="height:130px" name="textarea" id="textarea"></textarea>
+								<span class="errormsg"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="form-left">&nbsp;</div>
+							<div class="form-middle">
+								<button class="btn btn-warning form-element" type="submit">提交</button>
+							</div>
+							<div class="form-right">&nbsp;</div>
+						</div>
+
+					</form>
+
+					<pre><code class="xml">
+				&lt;form id=&quot;formvalidate&quot;&gt;
+						&lt;div class=&quot;form-group&quot;&gt;
+							&lt;div class=&quot;form-left&quot;&gt;手机号码&lt;/div&gt;
+							&lt;div class=&quot;form-middle&quot;&gt;
+								&lt;input type=&quot;text&quot; class=&quot;form-element&quot; id=&quot;phone&quot; name=&quot;phone&quot; placeholder=&quot;你的手机号码&quot;&gt;&lt;/div&gt;
+							&lt;div class=&quot;form-right&quot;&gt;
+								&lt;span class=&quot;errormsg&quot;&gt;&lt;/span&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+					&lt;div class=&quot;form-group&quot;&gt;
+						&lt;div class=&quot;form-left&quot;&gt;性别&lt;/div&gt;
+						&lt;div class=&quot;form-middle&quot;&gt;
+							&lt;div class=&quot;checkbox&quot;&gt;
+								&lt;label&gt;
+									&lt;input type=&quot;checkbox&quot; name=&quot;sex&quot; value=&quot;1&quot; id=&quot;sex&quot;&gt;男&lt;/label&gt;
+								&lt;label class=&quot;label-spacing&quot;&gt;
+									&lt;input type=&quot;checkbox&quot; name=&quot;sex&quot; value=&quot;0&quot; id=&quot;sex&quot;&gt;女&lt;/label&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;form-right&quot;&gt;
+							&lt;span class=&quot;errormsg&quot;&gt;&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;form-group&quot;&gt;
+						&lt;div class=&quot;form-left&quot;&gt;简介&lt;/div&gt;
+						&lt;div class=&quot;form-mright&quot;&gt;
+							&lt;textarea class=&quot;form-textarea&quot; style=&quot;height:130px&quot; name=&quot;textarea&quot; id=&quot;textarea&quot;&gt;&lt;/textarea&gt;
+							&lt;span class=&quot;errormsg&quot;&gt;&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;form-group&quot;&gt;
+						&lt;div class=&quot;form-left&quot;&gt;&amp;nbsp;&lt;/div&gt;
+						&lt;div class=&quot;form-middle&quot;&gt;
+							&lt;button class=&quot;btn btn-warning form-element&quot; type=&quot;submit&quot;&gt;提交&lt;/button&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;form-right&quot;&gt;&amp;nbsp;&lt;/div&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+				
+				</code></pre>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>
+    var rules = {
+       	phone: {
+            required: true,
+            number: true
+        },
+        sex: "required",
+        textarea: "required",
+    }
+    var messages = {
+       	phone: {
+            required: "请输入手机号码",
+            number: "请输入正确手机号码"
+        },
+        sex: "请选择性别",
+        textarea: "请输入简介",
+    }
+	$("#formvalidate").validate({
+        rules:rules,
+        messages:messages,
+        errorPlacement: function(error, element) {
+            element.addClass("danger"); 
+            element.closest(".form-group").find('.errormsg').first()
+                   .addClass('alert a-is-danger')
+                   .text(error.html());
+        },
+        success:function(e){
+        	$("#"+e.attr("for")).closest(".form-group").find('.errormsg').first()
+                                .removeClass('alert a-is-danger');      
+        }
+	});
+</script>
+<script>hljs.initHighlightingOnLoad();</script>

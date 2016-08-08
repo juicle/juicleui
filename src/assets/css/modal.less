@@ -1,0 +1,57 @@
+@reveal-modal-bg-outside:#000;
+
+@reveal-modal-width:520px;
+
+@reveal-modal-bg:#eee;
+
+@reveal-modal-pad:30px 40px 34px;
+
+@reveal-modal-base-width:200px;
+
+@reveal-modal-base-left:-140px;
+
+@reveal-radius:5px;
+.reveal-modal-bg { 
+    position: fixed; 
+    height: 100%;
+    width: 100%;
+    background: @reveal-modal-bg-outside;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0; 
+}
+
+.reveal-modal {
+    visibility: hidden;
+    top: 100px; 
+    left: 50%;
+    margin-left: -300px;
+    width: @reveal-modal-width;
+    background: @reveal-modal-bg ;
+    position: absolute;
+    z-index: 101;
+    padding: @reveal-modal-pad;
+    .border_radius(@reveal-radius);
+    .box_shadow(0 0 10px rgba(0,0,0,.4));
+    .close-reveal-modal {
+       font-family: 'FontAwesome';
+       line-height: .5;
+       position: absolute;
+       top: 14px;
+       right: 11px;
+       color: #aaa;
+       text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+       font-weight: bold;
+       cursor: pointer;
+    }
+    .close-reveal-modal:before{
+       content:"\f00d";
+    }
+}
+
+.reveal-modal.small{ width: @reveal-modal-base-width; margin-left: @reveal-modal-base-left;}
+.reveal-modal.medium{ width: @reveal-modal-base-width * 2; margin-left: @reveal-modal-base-left - 100;}
+.reveal-modal.large{ width: @reveal-modal-base-width * 3; margin-left: @reveal-modal-base-left - 200;}
+.reveal-modal.xlarge{ width: @reveal-modal-base-width * 4; margin-left: @reveal-modal-base-left - 300;}

@@ -1,0 +1,245 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>折叠面板</h4>
+				<p>
+					折叠效果组件，用于制作下滑菜单或手风琴效果。
+				</p>
+				<hr />
+                
+                <div class="row-fluid">
+					<h4>用法</h4>
+				</div>
+
+                <div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<div class="sideMenu">
+						<h3> <span></span>
+							书签切换系列
+						</h3>
+						<ul>
+							<li>淘宝首页右侧公告</li>
+							<li>京东首页产品切换</li>
+							<li>苏宁易购首页品牌切换</li>
+							<li>1号店双重切换</li>
+							<li>腾讯健康频道切换</li>
+						</ul>
+						<h3> <span></span>
+							幻灯片/焦点图系列
+						</h3>
+						<ul>
+							<li>淘宝首页焦点图</li>
+							<li>腾讯娱乐频道焦点图</li>
+							<li>腾讯电影频道焦点图</li>
+							<li>网易游戏频道焦点图</li>
+							<li>易迅首页焦点图</li>
+						</ul>
+						<h3>
+							<span></span>
+							带按钮切换
+						</h3>
+						<ul>
+							<li>淘宝首页今日活动</li>
+							<li>豆瓣读书频道</li>
+							<li>天猫首页品牌切换</li>
+							<li>格瓦拉首页活动进行中</li>
+							<li>腾讯博客图片滚动</li>
+						</ul>
+
+					</div>
+
+					<pre><code class="xml">&lt;div class=&quot;sideMenu&quot;&gt;
+	&lt;h3&gt; &lt;span&gt;&lt;/span&gt;
+	...
+	&lt;/h3&gt;
+	&lt;ul&gt;
+	   &lt;li&gt;...&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;h3&gt; &lt;span&gt;&lt;/span&gt;
+	...
+	&lt;/h3&gt;
+	&lt;ul&gt;
+	   &lt;li&gt;...&lt;/li&gt;
+	&lt;/ul&gt;
+       &lt;h3&gt; &lt;span&gt;&lt;/span&gt;
+	...
+	&lt;/h3&gt;
+	&lt;ul&gt;
+	   &lt;li&gt;...&lt;/li&gt;
+	&lt;/ul&gt;					
+&lt;/div&gt;</code></pre>
+				</div>
+
+                <div class="row-fluid">
+					<h4>参数设置</h4>
+				</div>
+				<div class="responsive-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>参数</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td width="16%"><code>type</code></td>
+								<td>效果类型，可选"slide"||"menu"，引入type:"menu"专门处理菜单/导航效果	</td>
+							</tr>
+							<tr>
+								<td><code>defaultPlay</code></td>
+								<td>默认是否执行效果（第一次运行是否执行效果）常用于导航/菜单	</td>
+							</tr>
+							<tr>
+								<td><code>returnDefault</code></td>
+								<td>鼠标移出容器，是否返回默认状态，常用于导航/菜单	</td>
+							</tr>
+							<tr>
+								<td><code>mouseOverStop</code></td>
+								<td>鼠标移到容器层（无缝滚动是mainCell）是否停止播放	</td>
+							</tr>
+							<tr>
+								<td><code>playStateCell</code></td>
+								<td>播放/暂停状态按钮，点击后会增加/删除"pauseState"类名用于控制样色。可参考 [2.22-真·全屏焦点图]	</td>
+							</tr>
+							<tr>
+								<td><code>switchLoad</code></td>
+								<td>内容切换加载，暂时只支持图片，必须配合后台程序使用。当为图片的时候switchLoad为图片实际路径的属性名称，例如switchLoad:"_src"
+[v2.1] 修复当scroll>1时，switchLoad无效的bug。</td>
+							</tr>
+							<tr>
+								<td><code>easing</code></td>
+								<td>缓动效果；
+[v2.1]更改默认效果为“swing”，使效果更流畅</td>
+							</tr>
+							<tr>
+								<td><code>startFun</code></td>
+								<td>每次切换效果开始时执行函数，用于处理特殊情况或创建更多效果。用法 startFun:function(i,c){ }； 其中i为当前分页，c为总页数
+[v2.1]增加传递参数，startFun:function( i, c, slider, titCell, mainCell, targetCell, prevCell, nextCell ){}，这样简写就方便了。
+例如 jQuery(".slideBox").slide({ startFun:function( i,c,s ){ s.show() } }); 这里的 s.show() 相当于 jQuery(".slideBox").show()</td>
+							</tr>
+							<tr>
+								<td><code>endFun</code></td>
+								<td>每次切换效果结束时执行函数，用法和startFun一致</td>
+							</tr>
+							<tr>
+								<td><code>triggerTime</code></td>
+								<td>毫秒，titCell触发时间，默认150毫秒延迟，以防重复执行效果。若为0即鼠标移过titCell立刻执行效果</td>
+							</tr>
+							<tr>
+								<td><code>targetCell</code></td>
+								<td>切换元素对象，处理内容切换元素非包裹状态下等情况，实现更多效果，处理更多情况，能和titCell、mainCell同时使用。只支持fade效果。
+[v2.1] 增加支持slideDown效果。</td>
+							</tr>
+							<tr>
+								<td><code>pageStateCell</code></td>
+								<td>分页状态对象，用于显示分页状态，例如：2/3</td>
+							</tr>
+							<tr>
+								<td><code>pnLoop</code></td>
+								<td>前/后按钮是否继续循环，若为false则当翻动到最前/后页时，前/后按钮点击无效，同时增加prevStop/nextStop类名控制样色</td>
+							</tr>
+							<tr>
+								<td><code>opp</code></td>
+								<td>默认反方向运动，例如 effect:"leftMarquee" 然后设置 opp:true，则效果为右滚动。常用于leftMarquee/topMarquee</td>
+							</tr>
+							<tr>
+								<td><code>autoPage</code></td>
+								<td>[v1.2] 程序自动分页，需结合titCell使用，若为true，则titCell为导航元素的包裹层对象。ps：scroll>1时，记得设置autoPage:true，否则分页错误。
+[v2.1] 支持自定义分页html，$为数字替换位置。例如autoPage:"<li><a>$</a></li>"，如果不想输出数字：autoPage:"<li><a></a></li>"。</td>
+							</tr>
+							<tr>
+								<td><code>titCell</code></td>
+								<td>导航元素对象（鼠标的触发元素对象）</td>
+							</tr>
+							<tr>
+								<td><code>mainCell</code></td>
+								<td>切换元素的包裹层对象</td>
+							</tr>
+							<tr>
+								<td><code>effect</code></td>
+								<td>动画效果
+[v1.0] fade：渐显； || top：上滚动；|| left：左滚动；|| topLoop：上循环滚动；|| leftLoop：左循环滚动；|| topMarquee：上无缝循环滚动；|| leftMarquee：左无缝循环滚动；
+[v2.0] fold：淡入淡出
+[v2.1] slideDown：下拉效果</td>
+							</tr>
+							<tr>
+								<td><code>autoPlay</code></td>
+								<td>自动运行</td>
+							</tr>
+							<tr>
+								<td><code>interTime</code></td>
+								<td>毫秒；自动运行间隔。当effect为无缝滚动(topMarquee/leftMarquee)时，相当于运行速度。</td>
+							</tr>
+							<tr>
+								<td><code>delayTime</code></td>
+								<td>毫秒；切换效果持续时间（一次切换效果执行所用的时间长度）。</td>
+							</tr>
+							<tr>
+								<td><code>trigger</code></td>
+								<td>titCell触发方式 || mouseover：鼠标移过触发；|| click：鼠标点击触发；</td>
+							</tr>
+							<tr>
+								<td><code>scroll</code></td>
+								<td>每次滚动个数。</td>
+							</tr>
+							<tr>
+								<td><code>vis</code></td>
+								<td>visible缩写，mainCell的可视范围个数，当实际内容个数少于可视个数的时候，不执行SuperSlide效果。</td>
+							</tr>
+							<tr>
+								<td><code>prevCell</code></td>
+								<td>前一个/页按钮对象。</td>
+							</tr>
+							<tr>
+								<td><code>nextCell</code></td>
+								<td>后一个/页按钮对象。</td>
+							</tr>
+							<tr>
+								<td><code>defaultIndex</code></td>
+								<td>默认的当前位置索引。0是第一个； defaultIndex:1 时，相当于从第2个开始执行</td>
+							</tr>
+							<tr>
+								<td><code>titOnClassName</code></td>
+								<td>当前titCell位置自动增加的class名称</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				
+
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>
+    var ary = location.href.split("&");
+
+	$(".sideMenu").slide({
+	    titCell:"h3",
+		targetCell:"ul",
+		effect:"slideDown",
+		delayTime:300 ,
+		trigger:"click"
+	});
+
+</script>
+<script>hljs.initHighlightingOnLoad();</script>

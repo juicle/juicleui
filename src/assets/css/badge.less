@@ -1,0 +1,81 @@
+@badge-min-width:10px;
+@badge-pad:4px 10px;
+@badge-font-size:14px;
+@badge-font-weight:400;
+@badge-color:#fff;
+@badge-background-color: #777;
+
+
+.badge {
+	display: inline-block;
+	min-width: @badge-min-width;
+	padding: @badge-pad;
+	font-size: @badge-font-size;
+	font-weight: @badge-font-weight;
+	line-height: 1;
+	color: @badge-color;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: @badge-background-color;
+	.border_radius(120px);
+}
+
+.btn-primary .badge,
+.btn-success .badge,
+.btn-warning .badge,
+.btn-info .badge,
+.btn-danger .badge {
+	background-color: #fff;
+	text-shadow: none;
+}
+
+.btn .badge {
+	margin-left: 6px;
+}
+
+.btn-primary .badge {
+	color: @color-primary;
+}
+
+.btn-success .badge {
+	color: @color-success;
+}
+
+.btn-info .badge {
+	color: @color-info;
+}
+
+.btn-warning .badge {
+	color: @color-warning;
+}
+
+.btn-danger .badge {
+	color: @color-danger;
+}
+
+.badge.success {
+	background-color: @color-danger;
+}
+
+.badge.primary {
+	background-color: @color-primary;
+}
+
+.badge.danger {
+	background-color: @color-danger;
+}
+
+.badge.warning {
+	background-color: @color-warning;
+}
+
+.badge.info {
+	background-color: @color-info;
+}
+
+.list-group-element.active .badge {
+	background-color: #fff;
+	text-shadow: none;
+	color: #4824ca;
+}

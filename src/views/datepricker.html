@@ -1,0 +1,62 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>日期选择器/Datepicker</h4>
+				<p>
+					创建带有日期选择器的可拨动触发的下拉菜单。
+				</p>
+				<hr />
+                
+                <div class="row-fluid">
+					<h4>用法</h4>
+				</div>
+
+                <div class="row-fluid">
+					<span class="btn-label danger">栗子</span>
+
+					<div class="form-group">
+						<div class="form-left">
+							<input type="text" class="form-element" id="datepicker" >
+						</div>
+					</div>
+
+					<pre><code class="xml">&lt;div class=&quot;form-group&quot;&gt;
+	&lt;div class=&quot;form-left&quot;&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-element&quot; id=&quot;datepicker&quot;&gt;
+       &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+
+				
+
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script type="text/javascript">
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date('2010-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020]
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>

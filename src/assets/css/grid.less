@@ -1,0 +1,304 @@
+/* `Responsive System ~ Desktop (979px < width < 1200px) CSS part 1
+----------------------------------------------------------------------------------------------------*/
+@media (min-width: @breakpoint-large) and (max-width: @breakpoint-large-max) {
+
+body {
+    min-width: @breakpoint-large;
+}
+
+.desktop-hidden {
+    display: none;
+}
+
+.desktop-show {
+    display: block;
+}
+
+.container12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: breakpoint-large - 20;
+    padding: 0 10px;
+    .-(@i: 1) when (@i <= 12) {
+      .grid@{i}{width: 60px+(@i - 1) * 80;}
+      .prefix@{i}{padding-left: @i * 80px;}
+      .suffix@{i}{padding-right: @i * 80px;}
+      .push@{i}{left: @i * 80px;}
+      .pull@{i}{left: @i * -80px;}
+      .-((@i + 1));
+    }.-;
+} 
+
+.gridfn(@c) when(@c<=12){
+    .grid@{c}{
+        display: inline;float: left;margin-left: 10px;margin-right: 10px;
+    }
+    .push@{c},.pull@{c}{
+        position: relative;
+    }
+    .gridfn((@c+1));
+}
+.gridfn(1);
+
+.alpha {margin-left: 0;}
+.omega {margin-right: 0;}
+}
+
+
+/* `Responsive System ~ Large desktop (width > 1200px) CSS part-2 
+----------------------------------------------------------------------------------------------------*/
+@media (min-width: @breakpoint-xlarge) {
+body {
+    min-width: @breakpoint-xlarge;
+}
+
+.desktop-lg-hidden {
+    display: none;
+}
+
+.desktop-lg-show {
+    display: block;
+}
+
+.container12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    .-(@i: 1) when (@i <= 12) {
+      .grid@{i}{width: 60px+(@i - 1) * 100;}
+      .prefix@{i}{padding-left: @i * 100px;}
+      .suffix@{i}{padding-right: @i * 100px;}
+      .push@{i}{left: @i * 100px;}
+      .pull@{i}{left: @i * -100px;}
+      .-((@i + 1));
+    }.-;
+}
+
+
+.gridfn(@c) when(@c<=12){
+    .grid@{c}{
+        float: left;margin-left: 20px;margin-right: 20px;
+    }
+    .push@{c},.pull@{c}{
+        position: relative;
+    }
+    .gridfn((@c+1));
+}
+.gridfn(1);
+
+.alpha {margin-left: 0;}
+.omega {margin-right: 0;}
+}
+
+
+
+
+/* `Responsive System ~ Tablet and Pad ( width < 980px) CSS part-3
+----------------------------------------------------------------------------------------------------*/
+@media (max-width: @breakpoint-medium-max) {
+
+body {
+
+}
+
+.tablet-hidden {
+    display: none;
+}
+
+.tablet-show {
+    display: block;
+}
+
+.gridfn(@c) when(@c<=12){
+    .grid@{c},.tablet@{c}{
+        float: left;
+        margin-left: 1.041666667%;
+        margin-right: 1.041666667%; 
+    }
+    .push@{c},.pull@{c}{
+        position: relative;
+    }
+    .gridfn((@c+1));
+}
+.gridfn(1);
+
+.container12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    .-(@i: 1) when (@i <= 12) {
+      .grid@{i},.tablet@{i}{width: 6.25%+(@i - 1) * (25/3);}
+      .prefix@{i}{padding-left: 25%/3*@i;}
+      .suffix@{i}{padding-right: 25%/3*@i;}
+      .push@{i}{left: 25%/3*@i;}
+      .pull@{i}{left: -25%/3*@i;}
+      .-((@i + 1));
+    }.-;
+}
+
+.alpha {margin-left: 0;}
+.omega {margin-right: 0;}
+}
+
+
+/* `Responsive System ~ Mobile (width < 737px) CSS part-4
+----------------------------------------------------------------------------------------------------*/
+
+@media (max-width: @breakpoint-small-max) {
+body {
+    width: auto; 
+    min-width: 0;
+    display: block;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.mobile-show {
+    display: block;
+}
+
+.gridfn(@c) when(@c<=12){
+    .grid@{c}{
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .gridfn((@c+1));
+}
+.gridfn(1);
+
+.container12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    min-width: 0;
+    .-(@i: 1) when (@i <= 12) {
+      .grid@{i}{width: auto;}
+      .prefix@{i}{padding-left: 0;}
+      .suffix@{i}{padding-right: 0;}
+      .push@{i},.pull@{i}{left: auto;}
+      .row-fluid .grid@{i}{
+        width: auto; /* Use flow layout one column a line*/
+        min-width: 0;
+        display: block;
+      }
+      .row-fluid .prefix@{i},.row-fluid .suffix@{i}{
+        padding-left: 0;
+      }
+      .row-fluid .push@{i},.row-fluid .pull@{i}{
+        left: auto;
+      }
+      .-((@i + 1));
+    }.-;
+}
+
+.row-fluid{
+    .-(@i: 1) when (@i <= 12) {
+      .grid@{i}{float: none;margin-left: 0;margin-right: 0;}
+      .-((@i + 1));
+    }.-;
+}
+
+.alpha {
+    margin-left: 0;
+}
+
+.omega {
+    margin-right: 0;
+}
+}
+
+
+.responsive-img {
+    width: 100%;
+    max-width: 100%;    
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.row-fluid {
+    width: 100%;
+    *zoom: 1;
+    &:before,&:after{
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    &:after{
+        clear: both;
+    }
+    .-(@i: 1) when (@i <= 12) {
+      .grid@{i}{
+         float: left;
+         margin-left: 1.041666667%;
+         margin-right: 1.041666667%; 
+         *margin-left: 1.03%;
+         *margin-right: 1.03%; 
+      }
+      .push@{i},.pull@{i}{
+         position: relative;
+      }
+      .grid-width@{i}0{float: left;}
+     .-((@i + 1));
+    }.-;
+    .alpha{
+        margin-left: 0;
+    }
+    .omega {
+        margin-right: 0;
+    }
+}
+
+.container12 {
+    zoom: 1; /* The following zoom: 1 rule is specifically for IE6 + IE7. Move to separate stylesheet if invalid CSS is a problem. */
+    &:after, &:before {
+        content: '.';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        height: 0;
+    }
+    &:after{
+        clear: both;
+    }
+    .row-fluid{
+        .-(@i: 1) when (@i <= 12) {
+           .grid@{i},.tablet@{i}{width: 6.25%+(@i - 1) * (25/3);}
+           .prefix@{i}{padding-left: 25%/3*@i;}
+           .suffix@{i}{padding-right: 25%/3*@i;}
+           .push@{i}{left: 25%/3*@i;}
+           .pull@{i}{left: -25%/3*@i;}
+           .grid-width@{i}0{width:@i * 10%}
+           .-((@i + 1));
+        }.-;
+    }
+}
+.clearfix{
+    zoom: 1;
+    &:after, &:before {
+        content: '.';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        height: 0;
+    }
+    &:after{
+        clear: both;
+    }
+}

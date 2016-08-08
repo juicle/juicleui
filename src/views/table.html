@@ -1,0 +1,333 @@
+<header class="head-nav mobile-hidden">
+	
+</header>
+
+<div class="mobile-nav">
+	
+</div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav">
+				
+			</ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>表格</h4>
+				<p>
+					表格兼容性较好，使用也方便。我们只需要在表格上添加
+					<code>.table</code>
+					类即可。
+				</p>
+				<hr />
+
+				<div class="row-fluid">
+					<h4>基本的表格</h4>
+					<p>CCUI的表格样式简洁，下面列举一些常用的样式。</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table">
+						<tr>
+							<th>菜单</th>
+							<th>口味</th>
+							<th>价格</th>
+						</tr>
+						<tr>
+							<td>玉米煎饼</td>
+							<td>一级棒</td>
+							<td>￥6.00</td>
+						</tr>
+						<tr>
+							<td>口水虾</td>
+							<td>非常棒</td>
+							<td>￥60.00</td>
+						</tr>
+						<tr>
+							<td>披萨</td>
+							<td>最棒</td>
+							<td>￥40.00</td>
+						</tr>
+					</table>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="attribute">"table"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">th</span></span>&gt;</span>菜单<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">th</span></span>&gt;</span>口味<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">th</span></span>&gt;</span>价格<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+    <span class="tag">&lt;<span class="title">/tr</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>玉米煎饼<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>一级棒<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>￥6.00<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+    <span class="tag">&lt;<span class="title">/tr</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>口水虾<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>非常棒<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>￥60.00<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+    <span class="tag">&lt;<span class="title">/tr</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>披萨<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>最棒<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+      <span class="tag">&lt;<span class="title">td</span></span>&gt;</span>￥40.00<span class="tag">&lt;<span class="title">/th</span></span>&gt;</span>
+    <span class="tag">&lt;<span class="title">/tr</span>&gt;</span>
+<span class="tag">&lt;<span class="title">/table</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>鼠标经过行</h4>
+					<p>
+						添加
+						<code>.table-hover</code>
+						类到鼠标经过需要高亮的行。
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table table-hover">
+						<tr>
+							<th>菜单</th>
+							<th>口味</th>
+							<th>价格</th>
+						</tr>
+						<tr>
+							<td>玉米煎饼</td>
+							<td>一级棒</td>
+							<td>￥6.00</td>
+						</tr>
+						<tr>
+							<td>口水虾</td>
+							<td>非常棒</td>
+							<td>￥60.00</td>
+						</tr>
+						<tr>
+							<td>披萨</td>
+							<td>最棒</td>
+							<td>￥40.00</td>
+						</tr>
+					</table>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="attribute">"table table-hover"</span>&gt;</span>
+  …
+<span class="tag">&lt;<span class="title">/table</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>表格条纹</h4>
+					<p>
+						添加
+						<code>.table-stripe</code>
+						类到需要显示条纹的表格上。
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table table-stripe">
+						<tr>
+							<th>菜单</th>
+							<th>口味</th>
+							<th>价格</th>
+						</tr>
+						<tr>
+							<td>玉米煎饼</td>
+							<td>一级棒</td>
+							<td>￥6.00</td>
+						</tr>
+						<tr>
+							<td>口水虾</td>
+							<td>非常棒</td>
+							<td>￥60.00</td>
+						</tr>
+						<tr>
+							<td>披萨</td>
+							<td>最棒</td>
+							<td>￥40.00</td>
+						</tr>
+					</table>
+				</div>
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="attribute">"table table-stripe"</span>&gt;</span>
+  …
+<span class="tag">&lt;<span class="title">/table</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>表格边框</h4>
+					<p>
+						添加
+						<code>.table-bordered</code>
+						类到需要显示边框的表格。
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table table-bordered">
+						<tr>
+							<th>菜单</th>
+							<th>口味</th>
+							<th>价格</th>
+						</tr>
+						<tr>
+							<td>玉米煎饼</td>
+							<td>一级棒</td>
+							<td>￥6.00</td>
+						</tr>
+						<tr>
+							<td>口水虾</td>
+							<td>非常棒</td>
+							<td>￥60.00</td>
+						</tr>
+						<tr>
+							<td>披萨</td>
+							<td>最棒</td>
+							<td>￥40.00</td>
+						</tr>
+					</table>
+				</div>
+
+				<pre><code class="xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="attribute">"table table-bordered"</span>&gt;</span>
+  …
+<span class="tag">&lt;<span class="title">/table</span>&gt;</span></code></pre>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>表格修饰类</h4>
+					<p>下面是一些你可以用到表格行上的类。</p>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table table-bordered">
+						<tr>
+							<th>类</th>
+							<th>描述</th>
+						</tr>
+						<tr>
+							<td>
+								<code>is-success</code>
+							</td>
+							<td>添加成功的颜色到表格行上</td>
+						</tr>
+						<tr>
+							<td>
+								<code>is-primary</code>
+							</td>
+							<td>添加主要的颜色到表格行上</td>
+						</tr>
+						<tr>
+							<td>
+								<code>is-info</code>
+							</td>
+							<td>添加信息的颜色到表格行上</td>
+						</tr>
+						<tr>
+							<td>
+								<code>is-warning</code>
+							</td>
+							<td>添加警告的颜色到表格行上</td>
+						</tr>
+						<tr>
+							<td>
+								<code>is-danger</code>
+							</td>
+							<td>添加危险的颜色到表格行上</td>
+						</tr>
+					</table>
+				</div>
+
+				<hr />
+
+				<div class="row-fluid">
+					<h4>表格修饰类应用</h4>
+					<p>
+						添加相关的修饰类到
+						<code>tr</code>
+						中
+					</p>
+					<p>
+						<span class="btn-label danger">栗子</span>
+					</p>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table table-bordered">
+						<tr>
+							<th>菜单</th>
+							<th>口味</th>
+							<th>价格</th>
+						</tr>
+						<tr class="is-danger">
+							<td>玉米煎饼</td>
+							<td>一级棒</td>
+							<td>￥6.00</td>
+						</tr>
+						<tr>
+							<td>口水虾</td>
+							<td>非常棒</td>
+							<td>￥60.00</td>
+						</tr>
+						<tr>
+							<td>披萨</td>
+							<td>最棒</td>
+							<td>￥40.00</td>
+						</tr>
+					</table>
+					<pre><code class="xml"><span class="tag">&lt;<span class="title">tr</span> <span class="attribute">class</span>=<span class="attribute">"is-danger"</span>&gt;</span>
+  …
+<span class="tag">&lt;<span class="title">/tr</span>&gt;</span></code></pre>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table">
+						<tr>
+							<th>类</th>
+						</tr>
+						<tr class="is-success">
+							<td>成功!</td>
+						</tr>
+						<tr class="is-primary">
+							<td>主要!</td>
+						</tr>
+						<tr class="is-info">
+							<td>信息!</td>
+						</tr>
+						<tr class="is-warning">
+							<td>警告!</td>
+						</tr>
+						<tr class="is-danger">
+							<td>危险!</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer>
+	
+</footer>
+<script>hljs.initHighlightingOnLoad();</script>

@@ -1,0 +1,156 @@
+<header class="head-nav mobile-hidden"></header>
+
+<div class="mobile-nav"></div>
+
+<div class="page-main">
+	<div class="container12">
+
+		<div class="grid2">
+			<ul class="side-nav"></ul>
+		</div>
+
+		<div class="grid10">
+			<div class="content-main">
+
+				<h4>幻灯片</h4>
+				<p>
+					幻灯片是网站首页基本都会有的功能，下面是一个幻灯片的使用例子。使用时加载
+					<code>slide.js</code>
+					，及修改
+					<code>slide.less</code>
+					里相对应的CSS样式。
+				</p>
+				<div class="row-fluid">
+					<h4>用法</h4>
+				</div>
+				<p>
+					<span class="btn-label danger">例子</span>
+				</p>
+
+				<div class="row-fluid">
+					<div class="slidebox">
+						<div class="banner">
+							<ul>
+								<li>
+									<img src="../assets/images/sunset.jpg" />
+								</li>
+								<li>
+									<img src="../assets/images/subway.jpg" />
+								</li>
+								<li>
+									<img src="../assets/images/shop.jpg" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<pre><code class="xml">&lt;div class=&quot;slidebox&quot;&gt;
+	&lt;div class=&quot;banner&quot;&gt;
+	    &lt;ul&gt;
+			&lt;li&gt;
+			    &lt;img src=&quot;../assets/images/sunset.jpg&quot; /&gt;				
+			&lt;/li&gt;
+			&lt;li&gt;
+			    &lt;img src=&quot;../assets/images/subway.jpg&quot; /&gt;				
+			&lt;/li&gt;
+			&lt;li&gt;
+			    &lt;img src=&quot;../assets/images/shop.jpg&quot; /&gt;				
+			&lt;/li&gt;
+	    &lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+$(&#39;.banner&#39;).unslider({
+	speed: 500,             <br/>	delay: 3000,
+	arrows:true,            <br/>	dots: true, <br/>	autoplay:false       <br/>});
+&lt;/script&gt;
+</code></pre>
+
+<hr>
+
+				<div class="row-fluid">
+					<h4>参数设置</h4>
+				</div>
+
+				<div class="responsive-table">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>class</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code>speed</code>
+								</td>
+								<td>速度</td>
+							</tr>
+							<tr>
+								<td>
+									<code>delay</code>
+								</td>
+								<td>停留时间</td>
+							</tr>
+							<tr>
+								<td>
+									<code>complete</code>
+								</td>
+								<td>滑动结束执行方法</td>
+							</tr>
+							<tr>
+								<td>
+									<code>keys</code>
+								</td>
+								<td>键盘启用</td>
+							</tr>
+							<tr>
+								<td>
+									<code>dots</code>
+								</td>
+								<td>圆点导航</td>
+							</tr>
+							<tr>
+								<td>
+									<code>arrows</code>
+								</td>
+								<td>两侧导航</td>
+							</tr>
+							<tr>
+								<td>
+									<code>fluid</code>
+								</td>
+								<td>响应式</td>
+							</tr>
+							<tr>
+								<td>
+									<code>autoplay</code>
+								</td>
+								<td>自动滑动</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer></footer>
+<script>
+	$('.banner').unslider({
+	speed: 500,               
+	delay: 3000,
+	arrows:true,              
+	dots: true,   
+	autoplay:false         
+});
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
